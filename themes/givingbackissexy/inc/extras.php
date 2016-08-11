@@ -39,3 +39,10 @@ function gbis_login_link( $url ){
     return home_url();
 }
 add_filter( 'login_headerurl', 'gbis_login_link' );
+
+
+//Change Logo Title on Log-In Screen
+function gbis_logo_title() {
+	return 'View Website';
+}
+add_filter ('login_headertitle', 'gbis_logo_title');
