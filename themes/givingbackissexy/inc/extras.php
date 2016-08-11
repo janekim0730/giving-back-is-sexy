@@ -27,3 +27,15 @@ function givingbackissexy_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'givingbackissexy_body_classes' );
+
+
+/*----------------------------
+  GBIS: Theme-Independent Functions
+-----------------------------*/
+
+//Change Link of Logo on Login Screen
+
+function gbis_login_link( $url ){
+    return home_url();
+}
+add_filter( 'login_headerurl', 'gbis_login_link' );
