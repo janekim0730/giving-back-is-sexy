@@ -33,8 +33,14 @@ add_filter( 'body_class', 'givingbackissexy_body_classes' );
   GBIS: Theme-Independent Functions
 -----------------------------*/
 
-//Change Link of Logo on Login Screen
+//Add Custom Logo on Log-In Screen
+function gbis_custom_login() {
+	echo '<link rel="stylesheet" type="text/css" href=" ' . get_stylesheet_directory_uri() . '/build/css/custom-login.css"/>';
+}
+add_action ('login_head', 'gbis_custom_login');
 
+
+//Change Link of Logo on Login Screen
 function gbis_login_link( $url ){
     return home_url();
 }
