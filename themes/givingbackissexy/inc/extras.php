@@ -27,3 +27,66 @@ function givingbackissexy_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'givingbackissexy_body_classes' );
+
+
+/*----------------------------
+  GBIS: Theme-Independent Functions
+-----------------------------*/
+
+//Add Custom Logo on Log-In Screen
+function gbis_custom_login() {
+	echo '<style type="text/css">
+					.login h1 a {
+						color: red;
+						width: auto;
+						height: 21px;
+						background-image: url('.get_stylesheet_directory_uri().'/assets/images/logos/login-logo.png) !important;
+						background-size: contain;
+					}
+
+					.login form .input:focus,
+					input[type=radio]:focus,
+					input[type=checkbox]:focus {
+						border: 1px solid #ebcb80;
+						box-shadow: 0 0 2px rgba(235, 203, 128,.8)
+					}
+
+					input[type=checkbox]:checked:before {
+						color: #000;
+					}
+
+					.login #backtoblog a:hover,
+					.login #nav a:hover {
+						color: #000;
+					}
+
+					.wp-core-ui .button-primary {
+						background-color: #000;
+						border: #000;
+						text-shadow: none;
+						box-shadow: none;
+					}
+
+					.wp-core-ui .button-primary:hover,
+					.wp-core-ui .button-primary:focus {
+						color: #000;
+						background-color: #fff;
+						border: 1px solid #000;
+					}
+				</style>';
+}
+add_action ('login_head', 'gbis_custom_login');
+
+
+//Change Link of Logo on Login Screen
+function gbis_login_link( $url ){
+    return home_url();
+}
+add_filter( 'login_headerurl', 'gbis_login_link' );
+
+
+//Change Logo Title on Log-In Screen
+function gbis_logo_title() {
+	return 'View Website';
+}
+add_filter ('login_headertitle', 'gbis_logo_title');
