@@ -27,8 +27,9 @@ themes/givingbackissexy/gulpfile.js
 # Ignore style.css #
 themes/givingbackissexy/style.css
 
-# Ignore WP Sync DB #
+# Ignore WP Migrate DB and WP Sync DB #
 uploads/wp-sync-db
+uploads/wp-migrate-db
 
 # Ignore OS files #
 .DS_Store
