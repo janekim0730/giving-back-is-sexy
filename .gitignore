@@ -52,12 +52,4 @@ themes/givingbackissexy/build/*
 themes/givingbackissexy/gulpfile.js
 
 # Ignore style.css #
-<<<<<<< HEAD
-<<<<<<< HEAD
 themes/givingbackissexy/style.css
-=======
-themes/givingbackissexy/style.css
->>>>>>> 7cbb574348dbb43ca764da8e4bcf517e62f86aa9
-=======
-themes/givingbackissexy/style.css
->>>>>>> 7cbb574348dbb43ca764da8e4bcf517e62f86aa9
