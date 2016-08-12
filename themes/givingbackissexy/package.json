@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cbananal/giving-back-is-sexy.git"
+    "url": "git+https://github.com/janekim0730/giving-back-is-sexy.git"
   },
   "author": "Claudine Bananal and Jane Kim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cbananal/giving-back-is-sexy/issues"
+    "url": "https://github.com/janekim0730/giving-back-is-sexy/issues"
   },
-  "homepage": "https://github.com/cbananal/giving-back-is-sexy#readme"
+  "homepage": "https://github.com/janekim0730/giving-back-is-sexy#readme"
 }
