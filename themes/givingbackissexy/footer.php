@@ -2,10 +2,6 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package Giving_Back_Is_Sexy
  */
 
@@ -14,15 +10,33 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'givingbackissexy' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'givingbackissexy' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'givingbackissexy' ), 'givingbackissexy', '<a href="http://claudinebananal.com%20/%20github.com/janekim0730" rel="designer">Claudine Bananal and Jane Kim</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<div class="footer-info">
+
+			<div class="go-top">
+				<img class="go-top-button" src="assets/images/icons/go-top-button.png" alt="go to top button" />
+			</div>
+
+			<div class="social-networks">
+				<p>connect with us</p>
+				<span class="pinterest-icon"><a href="" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></span>
+				<span class="linkedin-icon"><a href="" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+				<span class="twitter-icon"><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+				<span class="facebook-icon"><a href="" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+				<span class="instagram-icon"><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+			</div>
+
+			<div class="footer-menus">
+				<p>About</p>
+				<p>Events</p>
+				<p>Contact</p>
+			</div>
+
+			<p>Copyright &copy;2016 Cory Manson<p>
+
+    </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/header.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/home.min.js"></script>
 </body>
 </html>
