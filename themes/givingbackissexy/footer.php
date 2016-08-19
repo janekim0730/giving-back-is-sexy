@@ -13,7 +13,7 @@
 		<div class="footer-info">
 
 			<div class="go-top">
-				<img class="go-top-button" src="assets/images/icons/go-top-button.png" alt="go to top button" />
+				<a href="#top" id="smoothup" title="Back to top">Go To Top</a>
 			</div>
 
 			<div class="social-networks">
@@ -36,7 +36,6 @@
     </div><!-- #page -->
 
 <?php wp_footer(); ?>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/header.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/home.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/footer.min.js"></script>
 </body>
 </html>

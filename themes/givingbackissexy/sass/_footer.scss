@@ -32,3 +32,21 @@ footer{
   font-weight: 400;
   text-transform: uppercase;
 }
+
+#smoothup {
+height: 40px;
+width: 40px;
+position:fixed;
+bottom:50px;
+right:100px;
+text-indent:-9999px;
+display:none;
+background: url("..images/icons/go-top-button.png");
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s; transition-duration: 0.4s;
+}
+
+#smoothup:hover {
+-webkit-transform: rotate(360deg) }
+background: url('') no-repeat;
+}
