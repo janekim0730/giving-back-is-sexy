@@ -2,6 +2,12 @@
   GBIS: Header
 -----------------------------*/
 
+///Hide default styles
+.site-description {
+  display: none;
+}
+
+/*---------- Navigation ----------*/
 button.menu-toggle {
   display: none;
 }
