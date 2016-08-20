@@ -41,12 +41,12 @@ bottom:50px;
 right:100px;
 text-indent:-9999px;
 display:none;
-background: url("..images/icons/go-top-button.png");
+background: url('../../assets/images/icons/go-top-button.png');
 -webkit-transition-duration: 0.4s;
 -moz-transition-duration: 0.4s; transition-duration: 0.4s;
 }
 
 #smoothup:hover {
--webkit-transform: rotate(360deg) }
-background: url('') no-repeat;
+-webkit-transform: rotate(360deg);
+// background: url('') no-repeat;
 }
