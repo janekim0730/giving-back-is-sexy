@@ -7,7 +7,45 @@
   display: none;
 }
 
+.site-header {
+  width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #000;
+  position: fixed;
+  z-index: 1600;
+}
+
+//Placement of hamburger menu, title, and nav
+.site-branding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hamburger-menu {
+  width: 24px;
+  height: auto;
+  margin: 0 25px 0 8px;
+}
+
+.site-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  a, a:visited, a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 /*---------- Navigation ----------*/
-button.menu-toggle {
+.main-navigation {
   display: none;
 }

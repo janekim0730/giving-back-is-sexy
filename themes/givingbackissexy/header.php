@@ -26,6 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+			<div><img class="hamburger-menu" src="<?php echo get_template_directory_uri() ?>/assets/images/icons/hamburger.png"></div>
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

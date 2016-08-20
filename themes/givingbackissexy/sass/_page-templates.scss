@@ -4,6 +4,21 @@
   For page-exclusive styles, refer to their respective stylesheets.
 -----------------------------*/
 
+//When admin is logged in, this prevents sticky header from going bonkers.
+#wpadminbar {
+  position: fixed;
+}
+
+//Base size for rem values
 html {
   font-size: 16px;
+}
+
+.container {
+  width: 80%;
+}
+
+//Pushes the content at the bottom of the sticky header across all pages
+.site-content{
+  padding-top: 100px;
 }
