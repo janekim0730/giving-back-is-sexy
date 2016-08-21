@@ -2,6 +2,12 @@
   GBIS: Front Page
 -----------------------------*/
 
+.home {
+  .entry-title {
+    display: none;
+  }
+}
+
 .hero {
   width: 100%;
   min-height: 240px;
