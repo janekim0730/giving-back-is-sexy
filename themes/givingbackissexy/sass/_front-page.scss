@@ -1,3 +1,29 @@
 /*----------------------------
   GBIS: Front Page
 -----------------------------*/
+
+.hero {
+  width: 100%;
+  min-height: 240px;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-family: $font_accent;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: url('../../assets/images/hero-background.png') no-repeat;
+  background-size: cover;
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.logo {
+  margin: 20px auto;
+  text-align: center;
+  img {
+    width: 80%;
+    height: auto;
+  }
+}

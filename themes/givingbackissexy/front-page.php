@@ -17,6 +17,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="hero">
+			<p>Step into your</p>
+			<img src="<?php echo get_template_directory_uri()?>/assets/images/sexy-gold-text.png" alt="sexy">
+			<p>and give back</p>
+		</div>
+		<!--end hero container-->
+
+		<div class="logo container">
+			<img src="<?php echo get_template_directory_uri()?>/assets/images/logos/login-logo.png" alt="sexy">
+		</div>
+
 		<?php
 		if ( have_posts() ) :
 
@@ -52,5 +63,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
