@@ -28,36 +28,66 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri()?>/assets/images/logos/login-logo.png" alt="sexy">
 		</div>
 
-		<?php
-		if ( have_posts() ) :
+		<?php if ( have_posts() ) : ?>
 
-			if ( is_home() && ! is_front_page() ) : ?>
+			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 
-			<?php
-			endif;
+			<?php endif; ?>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header><!-- .entry-header -->
 
-			endwhile;
+					<div class="entry-content container">
+						<?php
+							the_content();
 
-			the_posts_navigation();
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'givingbackissexy' ),
+								'after'  => '</div>',
+							) );
+						?>
 
-		else :
+						<a class="learn-more" href="#">Learn More</a>
 
-			get_template_part( 'template-parts/content', 'none' );
+					</div><!-- .entry-content -->
 
-		endif; ?>
+					<?php if ( get_edit_post_link() ) : ?>
+						<footer class="entry-footer">
+							<?php
+								edit_post_link(
+									sprintf(
+										/* translators: %s: Name of current post */
+										esc_html__( 'Edit %s', 'givingbackissexy' ),
+										the_title( '<span class="screen-reader-text">"', '"</span>', false )
+									),
+									'<span class="edit-link">',
+									'</span>'
+								);
+							?>
+						</footer><!-- .entry-footer -->
+					<?php endif; ?>
+				</article><!-- #post-## -->
+
+
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

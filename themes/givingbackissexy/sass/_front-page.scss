@@ -6,6 +6,11 @@
   .entry-title {
     display: none;
   }
+
+  .entry-content {
+    text-align: center;
+    line-height: 2;
+  }
 }
 
 .hero {
@@ -31,5 +36,25 @@
   img {
     width: 80%;
     height: auto;
+  }
+}
+
+.learn-more {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 20px 115px;
+  color: #fff;
+  font-family: $font_accent;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  background-color: #000;
+  &:visited,
+  &:focus {
+    color: #fff;
+  }
+  &:hover {
+    color: #000;
+    background-color: #fff;
   }
 }
