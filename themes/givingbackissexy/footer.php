@@ -13,7 +13,7 @@
 		<div class="footer-info">
 
 			<div class="go-top">
-				<a href="#top" id="smoothup" title="Back to top">Go To Top</a>
+				<a href="#top" id="smoothup" title="Back to top"><img class="top-button" src="<?php echo get_template_directory_uri()?>/assets/images/icons/go-top-button.png" alt="go-to-top button"></a>
 			</div>
 
 			<div class="social-networks">
