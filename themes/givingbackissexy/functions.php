@@ -155,3 +155,16 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Posts2Posts plugin to connect events and tickets
+ */
+function givingbackissexy_connect_event_ticket() {
+    p2p_register_connection_type( array(
+        'name' => 'event_to_ticket',
+        'from' => 'event',
+        'to' => 'ticket'
+    ) );
+}
+add_action( 'p2p_init', 'givingbackissexy_connect_event_ticket' );
