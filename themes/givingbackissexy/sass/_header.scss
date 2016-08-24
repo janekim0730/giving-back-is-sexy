@@ -18,14 +18,14 @@
   z-index: 1600;
 }
 
-//Placement of hamburger menu, title, and nav
+Placement of hamburger menu, title, and nav
 .site-branding {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hamburger-menu {
+.hamburger {
   width: 24px;
   height: auto;
   margin: 0 25px 0 8px;
@@ -46,6 +46,19 @@
 }
 
 /*---------- Navigation ----------*/
+
+//Menu button on mobile view
+.menu-toggle,
+.menu-toggle:focus,
+.menu-toggle:hover {
+  width: auto;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  background-color: #000;
+  }
+
 .main-navigation {
-  display: none;
+  width: 70px;
+  margin-right: 10px;
 }
