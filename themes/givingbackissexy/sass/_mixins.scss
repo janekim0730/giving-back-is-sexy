@@ -1,3 +1,17 @@
 /*----------------------------
   GBIS: Mixins
 -----------------------------*/
+
+/*---------- Media Queries ----------*/
+
+@mixin tablet {
+  @media (min-width: $breakpoint_tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint_desktop) {
+    @content;
+  }
+}
