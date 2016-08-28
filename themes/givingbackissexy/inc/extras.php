@@ -90,3 +90,24 @@ function gbis_logo_title() {
 	return 'View Website';
 }
 add_filter ('login_headertitle', 'gbis_logo_title');
+
+
+//Hide main WYSIWYG editor on the About:GBIS page template
+add_action( 'admin_head', 'hide_editor' );
+
+function hide_editor() {
+    global $pagenow;
+    if( !( 'post.php' == $pagenow ) ) return;
+
+    global $post;
+    // Get the Post ID.
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
+
+  // Get the name of the Page Template file
+  $template_file = get_post_meta($post_id, '_wp_page_template', true);
+
+  if($template_file == 'about-gbis.php'){ // the filename of the page template
+    remove_post_type_support('page', 'editor');
+  }
+}
