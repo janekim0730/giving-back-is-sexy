@@ -40,7 +40,7 @@ function gbis_custom_login() {
 						color: red;
 						width: auto;
 						height: 21px;
-						background-image: url('.get_stylesheet_directory_uri().'/assets/images/logos/login-logo.png) !important;
+						background-image: url('.get_stylesheet_directory_uri().'/assets/images/logos/logo.png) !important;
 						background-size: contain;
 					}
 

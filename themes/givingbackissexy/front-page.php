@@ -25,7 +25,7 @@ get_header(); ?>
 		<!--end hero container-->
 
 		<div class="logo container">
-			<img src="<?php echo get_template_directory_uri()?>/assets/images/logos/login-logo.png" alt="sexy">
+			<img src="<?php echo get_template_directory_uri()?>/assets/images/logos/logo.png" alt="sexy">
 		</div>
 
 		<?php if ( have_posts() ) : ?>
