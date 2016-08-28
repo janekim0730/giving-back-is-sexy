@@ -2,10 +2,41 @@
   GBIS: About
 -----------------------------*/
 
-/*--*--*--*--*--*--*--*--*--*--*--* Giving Back Is Sexy *--*--*--*--*--*--*--*--*--*--*--*/
+/*---------- About: GBIS ----------*/
+.page-template-about-gbis {
+  //Hide default text title
+  .entry-title {
+    display: none;
+  }
 
+  //Override the default style in pushing the content just below the sticky header
+  .site-content{
+    padding-top: 150px;
+  }
+}
 
+.about-gbis-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  p {
+    width: 80%;
+    display: inline-block;
+    line-height: 2;
+  }
+}
 
+.about-gbis-icon {
+  width: 80px;
+  margin-right: 5%;
+  border: 1px solid #000;
+  background-color: linen;
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
 
 /*--*--*--*--*--*--*--*--*--*--*--* Genicca Global Group *--*--*--*--*--*--*--*--*--*--*--*/
 
