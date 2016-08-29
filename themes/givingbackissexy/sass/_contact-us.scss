@@ -1,3 +1,35 @@
 /*----------------------------
   GBIS: Contact Us Page
 -----------------------------*/
+
+.page-template-contact-us {
+  .site-content {
+    padding-top: 140px;
+  }
+
+  .entry-title {
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  //Style for the e-mail and tel links
+  .cfs-hyperlink {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.contact-container {
+  margin: 0 auto 10px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/*---------- Contact Form ----------*/
+.wpcf7-form {
+  margin-top: 50px;
+}
