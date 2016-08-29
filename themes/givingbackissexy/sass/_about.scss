@@ -38,8 +38,37 @@
   }
 }
 
-/*--*--*--*--*--*--*--*--*--*--*--* Genicca Global Group *--*--*--*--*--*--*--*--*--*--*--*/
+/*---------- About: Genicca Global Group ----------*/
+.page-template-about-genicca {
+  //Override the default style in pushing the content just below the sticky header
+  .site-content{
+    padding-top: 120px;
+  }
 
+  //Centers the entry title
+  .entry-header{
+    margin: 0 auto;
+  }
+
+  .entry-title {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .entry-content {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+  }
+}
+
+.profile-photo {
+  width: 200px;
+  height: auto;
+  margin: 40px auto 20px;
+  display: block;
+}
 
 
 
