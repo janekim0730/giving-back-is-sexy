@@ -17,6 +17,7 @@
 
 .about-gbis-container {
   width: 100%;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -28,12 +29,9 @@
 }
 
 .about-gbis-icon {
-  width: 80px;
-  margin-right: 5%;
-  border: 1px solid #000;
-  background-color: linen;
+  margin: 12px 10% 0 2%;
   img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
 }
