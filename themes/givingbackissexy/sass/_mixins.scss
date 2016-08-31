@@ -15,3 +15,18 @@
     @content;
   }
 }
+
+
+@mixin button {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: $font_accent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
