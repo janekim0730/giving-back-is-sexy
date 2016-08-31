@@ -57,6 +57,9 @@ get_header(); ?>
 
 						<a class="learn-more" href="#">Learn More</a>
 
+						<!-- Grabs the form from the contact page -->
+						<?php $id = 17; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
+
 					</div><!-- .entry-content -->
 
 					<?php if ( get_edit_post_link() ) : ?>
