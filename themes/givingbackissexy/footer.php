@@ -19,10 +19,10 @@
 			<div class="social-networks">
 				<p>connect with us</p>
 				<span class="pinterest-icon"><a href="" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></span>
-				<span class="linkedin-icon"><a href="" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
-				<span class="twitter-icon"><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
-				<span class="facebook-icon"><a href="" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
-				<span class="instagram-icon"><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+				<span class="linkedin-icon"><a href="https://ca.linkedin.com/in/genicca-whitney-4b588a43" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+				<span class="twitter-icon"><a href="https://twitter.com/geniccadot.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+				<span class="facebook-icon"><a href="https://www.facebook.com/geniccadot.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+				<span class="instagram-icon"><a href="https://www.instagram.com/geniccadot.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
 			</div>
 
 			<div class="footer-menus">
