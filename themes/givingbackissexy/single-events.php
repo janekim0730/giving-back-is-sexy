@@ -12,24 +12,23 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
+<div><?php echo CFS()->get( 'event_description' ); ?></div>
 
-			the_post_navigation();
+<div><?php
+			$dates = CFS() -> get ('event_date');
+			foreach ($dates as $date) :
+			?>
+			<p><?php echo $date['event_day_of_the_week']; ?></p>
+			<p><?php echo $date['event_month']; ?></p>
+			<p><?php echo $date['event_day']; ?></p>
+			<p><?php echo $date['event_year']; ?></p>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+<?php endforeach; ?></div>
 
-		endwhile; // End of the loop.
-		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
