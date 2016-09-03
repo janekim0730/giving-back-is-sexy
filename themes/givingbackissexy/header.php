@@ -29,7 +29,7 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle menu-open" aria-controls="primary-menu" aria-expanded="false">
 					<!-- <?php esc_html_e( '', 'givingbackissexy' ); ?> -->
-					<div class="container" onclick="myFunction(this)">
+					<div class="hamburger-container" onclick="myFunction(this)">
 					  <div class="bar1"></div>
 					  <div class="bar2"></div>
 					  <div class="bar3"></div>
