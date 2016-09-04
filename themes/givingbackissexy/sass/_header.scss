@@ -100,18 +100,24 @@ Placement of hamburger menu, title, and nav
 }
 
 //Cover the whole page in pink gradient
-.toggled {
+.main-navigation.toggled {
   width: 100%;
   height: 100vh;
   margin: 0;
   background-color: linen;
-  transition: background 0.8s;
+  transition: all 0.8s;
+}
+
+.main-navigation {
+  height: 100vh;
+  transition: all 0.8s;
 }
 
 .main-navigation,
 .main-navigation.toggled,
 .site-branding p {
   padding-top: 20px;
+  transition: all 0.8s;
 }
 
 .main-navigation,
