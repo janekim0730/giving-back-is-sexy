@@ -4,37 +4,44 @@
 
 /*---------- About: GBIS ----------*/
 .page-template-about-gbis {
-  //Hide default text title
-  .entry-title {
-    display: none;
-  }
 
   //Override the default style in pushing the content just below the sticky header
   .site-content{
-    padding-top: 150px;
+    padding-top: 8rem;
   }
+
+  .about-gbis-content{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.hashtag-wrapper{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.gbis-hashtag{
+  width: 280px;
+  height: 28px;
 }
 
 .about-gbis-container {
-  width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 1rem;
+  text-align: left;
+  line-height: 2;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  p {
-    width: 80%;
-    display: inline-block;
-    line-height: 2;
-  }
 }
 
-.about-gbis-icon {
-  margin: 12px 10% 0 2%;
-  img {
-    width: 120px;
-    height: auto;
-  }
+.about-gbis-icon{
+  align-self: flex-start;
+  width: 60px;
+  height: 60px;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
 }
+
 
 /*---------- About: Genicca Global Group ----------*/
 .page-template-about-genicca {
@@ -148,13 +155,6 @@
   }
  }
 }
-
-
-}
-
-//desktop
-@media screen and (min-width: 1240px) {
-
 
 
 }
