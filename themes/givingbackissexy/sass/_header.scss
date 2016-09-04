@@ -88,7 +88,7 @@
   height: 100vh; //helps transition of site-title when closing the toggled hamburger
   padding-top: 20px;
   margin-right: 10px;
-  // transition: all 0.8s;
+  transition: all 0.4s;
   li {
     @extend .focus; //displays the sub-menus
   }
@@ -144,5 +144,5 @@
   height: 100vh;
   margin: 0;
   background: linear-gradient(153deg, #fff, #ff3ea5, #ff3ea5);
-  // transition: all 0.8s;
+  transition: all 0.4s;
 }
