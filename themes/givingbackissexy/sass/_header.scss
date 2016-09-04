@@ -17,19 +17,6 @@
   z-index: 1600;
 }
 
-Placement of hamburger menu, title, and nav
-.site-branding {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.hamburger {
-  width: 24px;
-  height: auto;
-  margin: 0 25px 0 8px;
-}
-
 .site-title {
   width: auto;
   display: inline-block;
@@ -57,14 +44,9 @@ Placement of hamburger menu, title, and nav
   border: 0;
   box-shadow: none;
   background-color: transparent;
-  }
-
-.main-navigation {
-  width: 70px;
-  margin-right: 10px;
 }
 
-//Hamburger Icon
+/*---Hamburger CSS Functionality--- */
 .hamburger-container {
   display: inline-block;
   cursor: pointer;
@@ -98,6 +80,65 @@ Placement of hamburger menu, title, and nav
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-9px, -8px) ;
 }
+/*---End Hamburger--- */
+
+
+.main-navigation {
+  width: 70px;
+  height: 100vh; //helps transition of site-title when closing the toggled hamburger
+  padding-top: 20px;
+  margin-right: 10px;
+  // transition: all 0.8s;
+  li {
+    @extend .focus; //displays the sub-menus
+  }
+}
+
+.main-navigation.toggled,
+.site-branding p {
+  padding-top: 20px;
+}
+
+//Indent everything, including the hamburger menu and site title,
+//whether toggled or not
+.main-navigation,
+.main-navigation.toggled {
+  padding-left: 20px;
+}
+
+//Indent the links of the toggled menu further to the right
+.menu-primary-container {
+  width: 100%;
+  margin-left: 25px;
+}
+
+//Display links including sub-menu
+.main-navigation ul ul {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  position: relative;
+  margin-bottom: 15%;
+
+  li {
+    margin: 10px 0 10px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+//Override default Underscores styling
+//This is to prevent long link names from occupying another line.
+.main-navigation ul ul a {
+	width: auto;
+}
+
+//Styling of menu item links
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 //Cover the whole page in pink gradient
 .main-navigation.toggled {
@@ -105,26 +146,5 @@ Placement of hamburger menu, title, and nav
   height: 100vh;
   margin: 0;
   background: linear-gradient(153deg, #fff, #ff3ea5, #ff3ea5);
-  transition: all 0.8s;
-}
-
-.main-navigation {
-  height: 100vh;
-  transition: all 0.8s;
-}
-
-.main-navigation,
-.main-navigation.toggled,
-.site-branding p {
-  padding-top: 20px;
-  transition: all 0.8s;
-}
-
-.main-navigation,
-.main-navigation.toggled {
-  padding-left: 20px;
-}
-
-.main-navigation li {
-  @extend .focus;
+  // transition: all 0.8s;
 }
