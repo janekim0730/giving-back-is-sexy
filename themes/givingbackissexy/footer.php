@@ -18,7 +18,7 @@
 
 			<div class="social-networks">
 				<p>connect with us</p>
-				<span class="pinterest-icon"><a href="" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></span>
+				<span class="youtube-icon"><a href="https://m.youtube.com/watch?feature=youtu.be&v=4UhKia60NeI" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
 				<span class="linkedin-icon"><a href="https://ca.linkedin.com/in/genicca-whitney-4b588a43" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
 				<span class="twitter-icon"><a href="https://twitter.com/geniccadotcom" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
 				<span class="facebook-icon"><a href="https://www.facebook.com/geniccadotcom" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
@@ -26,9 +26,7 @@
 			</div>
 
 			<div class="footer-menus">
-				<p>About</p>
-				<p>Events</p>
-				<p>Contact</p>
+			 <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
 			</div>
 
 			<p>Copyright &copy;2016 Cory Manson<p>
