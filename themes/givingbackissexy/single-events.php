@@ -13,6 +13,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
+<?php the_post_thumbnail('large'); ?>
+
+
 <div><?php echo CFS()->get( 'event_description' ); ?></div>
 
 <div><?php
