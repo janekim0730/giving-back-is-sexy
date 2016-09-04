@@ -12,10 +12,6 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-info">
 
-			<div class="go-top">
-				<a href="#top" id="smoothup" title="Back to top"><img class="top-button" src="<?php echo get_template_directory_uri()?>/assets/images/icons/go-top-button.png" alt="go-to-top button"></a>
-			</div>
-
 			<div class="social-networks">
 				<p>connect with us</p>
 				<span class="youtube-icon"><a href="https://m.youtube.com/watch?feature=youtu.be&v=4UhKia60NeI" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
@@ -25,13 +21,19 @@
 				<span class="instagram-icon"><a href="https://www.instagram.com/geniccadotcom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
 			</div>
 
-			<div class="footer-menus">
-			 <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
-			</div>
+      <div class="menu-links">
+				<div class="footer-menus">
+				 <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
+				</div>
 
-			<p>Copyright &copy;2016 Cory Manson<p>
+				<div class="go-top">
+					<a href="#top" id="smoothup" title="Back to top"><img class="top-button" src="<?php echo get_template_directory_uri()?>/assets/images/icons/go-top-button.png" alt="go-to-top button"></a>
+				</div>
+		 </div>
 
-    </div><!-- #page -->
+			<p class="copyright">Copyright &copy;2016 Cory Manson<p>
+
+    </div>
 
 <?php wp_footer(); ?>
 	<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/build/js/footer.min.js"></script> -->

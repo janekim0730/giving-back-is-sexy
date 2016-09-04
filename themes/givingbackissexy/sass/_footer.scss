@@ -9,31 +9,128 @@
   text-align: center;
 }
 
-.social-networks a{
+.social-networks{
+  padding: 1rem;
 
+  p{
+    font-family: "SourceSansPro-Bold", "HelveticaNeue", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+  }
+
+  a{
     color: #fff;
     display: inline-block;
-    font-size: 1.5rem;
-    margin: .7rem;
+    font-size: 30px;
+    margin: .5rem;
 
-  &:visited{
-    color: #fff;
-  }
-  &:hover,
-  &:focus,
-  &:active {
-  	color: $accent_color;
+    &:visited{
+      color: #fff;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+    	color: $accent_color;
+    }
   }
 }
 
-.social-networks p{
-  font-family: SourceSansPro-Bold, HelveticaNeue, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
+.menu-links{
+  display: flex;
+  justify-content: space-around;
 }
 
-.top-button{
-  height: 3rem;
-  width: 3rem;
+.menu-footer-container{
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    margin-left:0;
+    margin-bottom: 0;
+
+    li{
+      text-align: left;
+      margin-bottom: .7rem;
+
+       a{
+        font-size: 20px;
+        font-family: "SourceSansPro-Bold", sans-serif;
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        &:visited{
+          color: #fff;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          color: $accent_color;
+         }
+        }
+      }
+    }
+  }
+
+  .top-button{
+    margin-top: 10px;
+    height: 47px;
+    width: 46px;
+}
+
+.copyright{
+  font-family: "SourceSansPro-Regular", sans-serif;
+  font-size: 14px;
+}
+
+/***********************************************************/
+/*/-----*****-----****** Media Query ******-----*****-----/*/
+/***********************************************************/
+
+//tablet
+@media only screen and (min-width: 768px){
+
+  .social-networks{
+    
+    padding-top: 2rem;
+
+    p{
+      font-size: 28px;
+    }
+
+    a{
+      font-size: 40px;
+      padding: .7rem;
+    }
+  }
+
+  .top-button{
+    margin-top: 10px;
+    height: 57px;
+    width: 56px;
+  }
+
+  .menu-footer-container{
+
+    ul li a{
+      font-size: 24px;
+    }
+  }
+
+  .copyright{
+    font-size: 18px;
+  }
+
+}
+
+//desktop
+@media only screen and (min-width: 992px){
+
 }
