@@ -3,11 +3,12 @@
 -----------------------------*/
 
 /*---------- Breakpoints ----------*/
-$breakpoint_tablet: 600px;
-$breakpoint_desktop: 1000px;
+$breakpoint_tablet: 768px;
+$breakpoint_desktop: 1240px;
 
 /*---------- Fonts ----------*/
-$font_default: 'Source Sans Pro', sans-serif;
+$font_default: 'SourceSansPro-Regular', sans-serif;
+$font-bold: "SourceSansPro-Bold", sans-serif;
 $font_accent: 'Montserrat Regular', sans-serif;
 
 /*---------- Colors ----------*/

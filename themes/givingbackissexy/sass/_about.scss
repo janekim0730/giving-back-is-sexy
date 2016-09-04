@@ -40,8 +40,12 @@
 .page-template-about-genicca {
   //Override the default style in pushing the content just below the sticky header
   .site-content{
-    padding: 120px 0 40px;
+    padding: 7.5rem 1rem 1rem 1rem;
   }
+
+#post-34{
+  margin-bottom: 0;
+}
 
   //Centers the entry title
   .entry-header{
@@ -49,24 +53,41 @@
   }
 
   .entry-title {
-    font-size: 1.4rem;
-    text-transform: capitalize;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
     letter-spacing: 1px;
   }
 
   .entry-content {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     line-height: 2;
+    font-family: 'SourceSansPro-Regular', sans-serif;
   }
 }
 
-.profile-photo {
-  width: 200px;
-  height: auto;
-  margin: 40px auto 20px;
-  display: block;
+.logo-wrapper{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+  img{
+    width: 580px;
+    height: 142px;
+  }
+
+  .profile-photo {
+    align-self: center;
+    width: 180px;
+    height: 190px;
+    margin: 30px 10px;
+  }
 }
+
+
 
 
 
@@ -96,7 +117,44 @@
   margin-top: 1rem;
 }
 
+
+/***********************************************************/
+/*/-----*****-----****** Media Query ******-----*****-----/*/
+/***********************************************************/
+
+//tablet
+@media screen and (min-width: 768px){
+
+.page-template-about-genicca {
+
+  .entry-title{
+    font-size: 48px;
+  }
+
+  .about-genicca{
+    font-size: 24px;
+  }
+
+  .logo-wrapper{
+
+    img{
+      width: 628px;
+      height: 191px;
+    }
+
+  .profile-photo {
+    width: 288px;
+    height: 288px;
+  }
+ }
+}
+
+
+}
+
+//desktop
 @media screen and (min-width: 1240px) {
+
 
 
 }
