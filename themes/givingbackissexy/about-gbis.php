@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main container" role="main">
+		<main id="main" class="site-main-container" role="main">
 
 			<div class="hashtag-wrapper"><img class="gbis-hashtag" src="<?php echo get_template_directory_uri()?>/assets/images/logos/logo.png" alt="giving back is sexy hashtag"></div>
 
