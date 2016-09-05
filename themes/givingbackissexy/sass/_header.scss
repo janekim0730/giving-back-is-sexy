@@ -40,7 +40,7 @@
 .menu-toggle:focus,
 .menu-toggle:hover {
   width: auto;
-  height: 30px;
+  height: auto;
   margin: .6em 1em .4em;
   padding: 0;
   outline: none;
@@ -51,6 +51,7 @@
 
 /*---Hamburger CSS Functionality--- */
 .hamburger-container {
+  height: auto;
   display: inline-block;
   cursor: pointer;
 }
@@ -95,7 +96,7 @@
   width: 70px;
   height: 100vh; //helps transition of site-title when closing the toggled hamburger
   padding-top: 20px;
-  margin-right: 22px;
+  margin-right: 5px;
   transition: all 0.4s;
   li {
     @extend .focus; //displays the sub-menus
@@ -111,13 +112,13 @@
 //whether toggled or not
 .main-navigation,
 .main-navigation.toggled {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 //Indent the links of the toggled menu further to the right
 .menu-primary-container {
   width: 100vw;
-  margin: 20px 0 0 25px;
+  margin: 40px 0 0 25px;
 }
 
 //Position links as block items with spacing
