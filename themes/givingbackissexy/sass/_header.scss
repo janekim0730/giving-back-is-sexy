@@ -40,6 +40,7 @@
 .menu-toggle:focus,
 .menu-toggle:hover {
   width: auto;
+  height: 30px;
   margin: .6em 1em .4em;
   padding: 0;
   outline: none;
@@ -64,6 +65,11 @@
 
 .bar2 {
   width: 20px;
+}
+
+.bar3 {
+  margin-bottom:  0;
+  padding-bottom: 0;
 }
 
 /* Rotate first bar */
