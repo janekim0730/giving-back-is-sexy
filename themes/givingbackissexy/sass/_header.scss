@@ -128,7 +128,7 @@
 //Indent the links of the toggled menu further to the right
 .menu-primary-container {
   width: 100vw;
-  margin: 40px 0 0 25px;
+  margin: 25px 0 0 25px;
   display: inline-block;
 }
 
@@ -155,7 +155,7 @@
   //since the nature of this value is that it gives a margin around the element.
 }
 
-//The 'About' parent link (It's unclickable)
+//The 'About' parent link (It's unclickable.)
 .menu-item-47 > a {
   cursor: default;
 }
