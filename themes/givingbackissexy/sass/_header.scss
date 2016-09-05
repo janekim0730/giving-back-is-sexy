@@ -35,7 +35,7 @@
 
 /*---------- Navigation ----------*/
 
-//Menu button on mobile view
+//Change look of menu button on mobile view
 .menu-toggle,
 .menu-toggle:focus,
 .menu-toggle:hover {
@@ -94,18 +94,13 @@
 
 .main-navigation {
   width: 70px;
-  height: 100vh; //helps transition of site-title when closing the toggled hamburger
+  height: 100vh; //helps in the transition of site-title when closing the toggled hamburger
   padding-top: 20px;
   margin-right: 5px;
   transition: all 0.4s;
   li {
     @extend .focus; //displays the sub-menus
   }
-}
-
-.main-navigation.toggled,
-.site-branding p {
-  padding-top: 22px;
 }
 
 //Indent everything, including the hamburger menu and site title,
@@ -115,29 +110,54 @@
   padding-left: 10px;
 }
 
+/*---And when toggled...--- */
+
+//"X" stays where it is. And the site-title, too.
+.main-navigation.toggled,
+.site-branding p {
+  padding-top: 22px;
+}
+
+//Prevent links from wrapping
+.main-navigation.toggled ul,
+.main-navigation.toggled ul ul.sub-menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 //Indent the links of the toggled menu further to the right
 .menu-primary-container {
   width: 100vw;
   margin: 40px 0 0 25px;
+  display: inline-block;
 }
 
 //Position links as block items with spacing
-.main-navigation ul ul {
-  width: 100%;
+.main-navigation ul .sub-menu {
+  width: auto;
   height: auto;
-  margin-bottom: 15%;
+  margin-bottom: 3.5rem;
   box-shadow: none;
   position: relative;
-  li {
-    width: 100%;
-    margin: 10px 0 10px 30px;
+  display: inline-block;
+  li { //specifically for sub-menus
+    width: auto;
+    margin: 0 0 10px 30px;
+    line-height: 2.5;
   }
 }
 
-//Override default Underscores styling
+//Override default Underscores styling (which is 200px)
 //This is to prevent long link names from occupying another line.
 .main-navigation ul ul a {
 	width: auto;
+  display: inline-block; //prevents space after a link item from being clickable,
+  //since the nature of this value is that it gives a margin around the element.
+}
+
+//The 'About' parent link (It's unclickable)
+.menu-item-47 > a {
+  cursor: default;
 }
 
 //Styling of menu item links
