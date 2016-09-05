@@ -40,6 +40,8 @@
 .menu-toggle:focus,
 .menu-toggle:hover {
   width: auto;
+  margin: .6em 1em .4em;
+  padding: 0;
   outline: none;
   border: 0;
   box-shadow: none;
@@ -87,7 +89,7 @@
   width: 70px;
   height: 100vh; //helps transition of site-title when closing the toggled hamburger
   padding-top: 20px;
-  margin-right: 10px;
+  margin-right: 22px;
   transition: all 0.4s;
   li {
     @extend .focus; //displays the sub-menus
