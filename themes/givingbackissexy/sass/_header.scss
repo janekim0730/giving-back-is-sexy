@@ -142,7 +142,7 @@
   display: inline-block;
   li { //specifically for sub-menus
     width: auto;
-    margin: 0 0 10px 30px;
+    margin-left: -35px; //hack for decreasing indent of sub-menu links
     line-height: 2.5;
   }
 }
@@ -162,6 +162,8 @@
 
 //Styling of menu item links
 .menu a {
+  display: inline-block;
+  float: left;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
