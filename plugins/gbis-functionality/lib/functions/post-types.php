@@ -44,6 +44,7 @@
  		'public'                => true,
  		'show_ui'               => true,
  		'show_in_menu'          => true,
+    'taxonomies'            => array( 'category', 'post_tag' ),
  		'menu_position'         => 5,
  		'menu_icon'             => 'dashicons-calendar',
  		'show_in_admin_bar'     => true,
