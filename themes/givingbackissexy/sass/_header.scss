@@ -181,10 +181,35 @@
   transition: all 0.4s;
 }
 
+/*---------- Media Queries ----------*/
+@include desktop {
 
-.site-branding {
-  @include desktop {
+  .site-branding {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 auto;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: coral;
   }
+
+  .menu-primary-container {
+    width: auto;
+    margin: 25px 25px 0 0;
+  }
+
+  #site-navigation {
+    width: auto;
+    height: 100px;
+  }
+
+  #site-navigation li {
+    width: 110px;
+  }
+
+  #primary-menu ul.sub-menu {
+    display: none;
+  }
+
 }
