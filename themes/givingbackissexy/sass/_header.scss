@@ -101,6 +101,9 @@
   li {
     @extend .focus; //displays the sub-menus
   }
+  @include desktop {
+    order: 2;
+  }
 }
 
 //Indent everything, including the hamburger menu and site title,
@@ -176,4 +179,12 @@
   margin: 0;
   background: linear-gradient(153deg, #fff, #ff3ea5, #ff3ea5);
   transition: all 0.4s;
+}
+
+
+.site-branding {
+  @include desktop {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
