@@ -63,7 +63,7 @@
 
   .entry-title {
     font-family: 'Montserrat Bold', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -110,8 +110,8 @@
 .freetobe-content{
 
   p{
-    line-height: 50px;
-    font-size: 24px;
+    line-height: 2;
+    font-size: 20px;
   }
 }
 
@@ -122,21 +122,26 @@
 
 .our-vision{
   padding: 1rem 2rem 1rem 2rem;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 2;
+  ul{
+    margin-left: 0;
+  }
 }
 
 .vision-title{
-  font-size: 44px;
+  font-size: 38px;
   font-family:'Montserrat Regular', sans-serif;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: .5rem;
 }
 
 .freetobe-girls, .freetobe-kids{
-  margin-top: 1rem;
+  height: auto;
+  width: 100%;
+
 }
 
 
