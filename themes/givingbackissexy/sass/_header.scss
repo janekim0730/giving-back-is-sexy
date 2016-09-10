@@ -206,10 +206,20 @@
 
   #site-navigation li {
     width: 110px;
+    margin: 0 20px;
   }
 
   #primary-menu ul.sub-menu {
+    font-size: 0.8rem;
+    width: inherit;
     display: none;
+    position: relative;
+    background-color: red;
+    top: 0;
+    left: 0;
+    li {
+      width: auto;
+    }
   }
 
 }
