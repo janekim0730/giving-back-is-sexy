@@ -6,29 +6,29 @@
  */
 
  // Register Custom Taxonomy
- function episode_taxonomy() {
+ function register_event_type_tax() {
 
  	$labels = array(
- 		'name'                       => 'Episodes',
- 		'singular_name'              => 'Episode',
- 		'menu_name'                  => 'Episode',
- 		'all_items'                  => 'All Episodes',
- 		'parent_item'                => 'Parent Episode',
- 		'parent_item_colon'          => 'Parent Episode:',
- 		'new_item_name'              => 'New Episode Name',
- 		'add_new_item'               => 'Add New Episode',
- 		'edit_item'                  => 'Edit Episode',
- 		'update_item'                => 'Update Episode',
- 		'view_item'                  => 'View Episode',
- 		'separate_items_with_commas' => 'Separate episodes with commas',
- 		'add_or_remove_items'        => 'Add or remove episodes',
+ 		'name'                       => 'Event Types',
+ 		'singular_name'              => 'Event Type',
+ 		'menu_name'                  => 'Product Type',
+ 		'all_items'                  => 'All Event Types',
+ 		'parent_item'                => 'Parent Event Type',
+ 		'parent_item_colon'          => 'Parent Event Type:',
+ 		'new_item_name'              => 'New Event Type Name',
+ 		'add_new_item'               => 'Add New Event Type',
+ 		'edit_item'                  => 'Edit Event Type',
+ 		'update_item'                => 'Update Event Type',
+ 		'view_item'                  => 'View Event Type',
+ 		'separate_items_with_commas' => 'Separate event types with commas',
+ 		'add_or_remove_items'        => 'Add or remove event types',
  		'choose_from_most_used'      => 'Choose from the most used',
- 		'popular_items'              => 'Popular Episodes',
- 		'search_items'               => 'Search Episodes',
+ 		'popular_items'              => 'Popular Event Types',
+ 		'search_items'               => 'Search Event Types',
  		'not_found'                  => 'Not Found',
- 		'no_terms'                   => 'No episodes',
- 		'items_list'                 => 'Episodes list',
- 		'items_list_navigation'      => 'Episodes list navigation',
+ 		'no_terms'                   => 'No event types',
+ 		'items_list'                 => 'Event Types list',
+ 		'items_list_navigation'      => 'Event Types list navigation',
  	);
  	$args = array(
  		'labels'                     => $labels,
@@ -37,10 +37,9 @@
  		'show_ui'                    => true,
  		'show_admin_column'          => true,
  		'show_in_nav_menus'          => true,
- 		'show_tagcloud'              => true,
+ 		'show_tagcloud'              => false,
  	);
- 	register_taxonomy( 'episode', array( 'page' ), $args );
+ 	register_taxonomy( 'event-type', array( 'event' ), $args );
 
  }
- add_action( 'init', 'episode_taxonomy', 0 );
- 
+ add_action( 'init', 'register_event_type_tax', 0 );
