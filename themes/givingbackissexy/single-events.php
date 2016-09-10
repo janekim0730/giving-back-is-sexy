@@ -60,7 +60,7 @@ get_header(); ?>
  			<div class="event-ticket">
  			<span><?php echo $ticket['ticket_price']; ?></span>
  			<span><?php echo $ticket['ticket_type']; ?></span>
- 			<a href="<?php echo $ticket['ticket_link']; ?>">Buy Tickets<a>
+ 			<a href="<?php echo $ticket['ticket_link']; ?>"></a>
  <?php endforeach; ?></div>
  <p>Tickets are available through Picatic</p>
 </div>
@@ -75,7 +75,7 @@ get_header(); ?>
 			 <span><?php echo $schedule['event_time']; ?></span>
 			 <span><?php echo $schedule['event_schedule']; ?></span>
  <?php endforeach; ?></div>
- <a>Buy Tickets</a>
+ <a href="#">Buy Tickets</a>
  </div>
 
 
