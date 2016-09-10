@@ -39,7 +39,7 @@
  		'show_in_nav_menus'          => true,
  		'show_tagcloud'              => false,
  	);
- 	register_taxonomy( 'event-type', array( 'event' ), $args );
+ 	register_taxonomy( 'event-type', array( 'events' ), $args );
 
  }
  add_action( 'init', 'register_event_type_tax', 0 );
