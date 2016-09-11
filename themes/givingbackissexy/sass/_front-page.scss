@@ -34,15 +34,38 @@
   letter-spacing: 3px;
   background: url('../../assets/images/hero-background.png') no-repeat;
   background-size: cover;
+  position: relative;
   img { //the 'sexy' image
     width: 150px;
     height: auto;
+    @include desktop {
+      width: 250px;
+      align-self: center;
+      position: absolute;
+      top: 130px;
+      left: 630px;
+    }
   }
   @include desktop {
     width: auto;
     height: 517px; //came from the original height of the background image
+    padding: 70px 200px;
+    font-size: 2rem;
     background-position: center;
     background-size: 1280px auto; //1280 came from the width of the image when viewed on the browser
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      position: absolute;
+      top: 100px;
+      left: 300px;
+    }
+    p:last-child {
+      display: block;
+      position: absolute;
+      top: 160px;
+    }
   }
 }
 
@@ -57,6 +80,7 @@
 
 .learn-more {
   @include button;
+  width: 250px;
   background-color: #000;
   border: 1px solid #000;
   &:visited,
@@ -66,5 +90,10 @@
   &:hover {
     color: #000;
     background-color: #fff;
+  }
+  @include desktop {
+    position: absolute;
+    top: 350px;
+    left: 300px;
   }
 }
