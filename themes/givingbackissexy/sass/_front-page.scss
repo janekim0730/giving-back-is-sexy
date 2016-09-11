@@ -25,7 +25,7 @@
 
 .hero {
   width: 100%;
-  min-height: 240px;
+  height: 340px;
   padding: 10px 0;
   font-size: 1.3rem;
   font-family: $font_accent;
@@ -34,9 +34,15 @@
   letter-spacing: 3px;
   background: url('../../assets/images/hero-background.png') no-repeat;
   background-size: cover;
-  img {
+  img { //the 'sexy' image
     width: 150px;
     height: auto;
+  }
+  @include desktop {
+    width: auto;
+    height: 517px;
+    background-position: center;
+    background-size: 1280px auto;
   }
 }
 
