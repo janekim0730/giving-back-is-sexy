@@ -185,18 +185,13 @@
 @include desktop {
 
   .site-branding {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: coral;
-  }
-
-  .menu-primary-container {
-    width: auto;
-    margin: 25px 25px 0 0;
+    // background-color: coral;
   }
 
   #site-navigation {
@@ -204,22 +199,81 @@
     height: 100px;
   }
 
-  #site-navigation li {
-    width: 110px;
-    margin: 0 20px;
+  .menu-primary-container {
+    width: 615px;
+    height: auto;
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: center;
   }
 
-  #primary-menu ul.sub-menu {
-    font-size: 0.8rem;
-    width: inherit;
-    display: none;
-    position: relative;
-    background-color: red;
-    top: 0;
-    left: 0;
-    li {
-      width: auto;
-    }
+  #primary-menu{
+    display: flex;
+    justify-content: center;
   }
+
+  //The container of both the button/link and the sub-menu
+  li.menu-item {
+    width: 190px;
+    margin: 0 5px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  //Parent links
+  .menu a {
+    float: none;
+  }
+
+  .sub-menu {
+    width: 180px;
+    height: auto;
+    padding: 5px;
+
+    font-size: 0.8rem;
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+  //Container of submenu
+  .main-navigation ul .sub-menu li {
+    margin-left: 5px; //overides the mobile style
+    line-height: 1.8;
+  }
+
+  .sub-menu li a {
+    width: inherit;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #000;
+    position: relative;
+  }
+
+  //Sub-menu link items
+  .main-navigation ul ul a {
+    width: 180px;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+
+  // #site-navigation li {
+  //   width: 190px;
+  //   margin: 0 20px;
+  // }
+
+  // #primary-menu ul.sub-menu {
+  //   font-size: 0.8rem;
+  //   width: inherit;
+  //   // display: none;
+  //   position: relative;
+  //   background-color: red;
+  //   z-index: 9999;
+  //   top: 0;
+  //   left: 0;
+  //   li {
+  //     width: auto;
+  //   }
+  // }
 
 }
