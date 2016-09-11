@@ -15,6 +15,12 @@
   .entry-content {
     text-align: center;
     line-height: 2;
+    @include desktop {
+      p:first-child { //the introductory text only
+        width: 58%;
+        margin: 0 auto;
+      }
+    }
   }
 
   //Places labels of forms to the left
@@ -75,6 +81,10 @@
   img {
     width: 80%;
     height: auto;
+    @include desktop {
+      width: 45%;
+      margin-bottom: 22px;
+    }
   }
 }
 
