@@ -187,11 +187,9 @@
   .site-branding {
     width: 90vw;
     margin: 0 auto;
-    padding: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    // background-color: coral;
   }
 
   #site-navigation {
@@ -200,14 +198,9 @@
   }
 
   .menu-primary-container {
-    width: 615px;
+    width: 629px;
     height: auto;
     margin: 25px auto 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  #primary-menu{
     display: flex;
     justify-content: center;
   }
@@ -216,9 +209,10 @@
   li.menu-item {
     width: 190px;
     margin: 0 5px;
+    text-align: center;
     position: relative;
     display: inline-block;
-    text-align: center;
+
   }
 
   //Parent links
@@ -230,50 +224,29 @@
     width: 180px;
     height: auto;
     padding: 5px;
-
     font-size: 0.8rem;
     border: 1px solid #000;
     background-color: #fff;
   }
-  //Container of submenu
+
+  // Sub-menu items (overrides)
   .main-navigation ul .sub-menu li {
     margin-left: 5px; //overides the mobile style
     line-height: 1.8;
   }
 
-  .sub-menu li a {
-    width: inherit;
-    margin-bottom: 5px;
-    font-size: 0.8rem;
-    color: #000;
-    position: relative;
-  }
-
   //Sub-menu link items
   .main-navigation ul ul a {
     width: 180px;
-    text-align: left;
+    margin-bottom: 5px;
     padding-left: 5px;
+    color: #000;
+    font-size: 0.8rem;
+    text-align: left;
+    position: relative;
+    &:hover {
+      color: #ff3ea5;
+    }
   }
 
-
-  // #site-navigation li {
-  //   width: 190px;
-  //   margin: 0 20px;
-  // }
-
-  // #primary-menu ul.sub-menu {
-  //   font-size: 0.8rem;
-  //   width: inherit;
-  //   // display: none;
-  //   position: relative;
-  //   background-color: red;
-  //   z-index: 9999;
-  //   top: 0;
-  //   left: 0;
-  //   li {
-  //     width: auto;
-  //   }
-  // }
-
-}
+} //end media query
