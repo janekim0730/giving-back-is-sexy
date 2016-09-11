@@ -40,9 +40,9 @@
   }
   @include desktop {
     width: auto;
-    height: 517px;
+    height: 517px; //came from the original height of the background image
     background-position: center;
-    background-size: 1280px auto;
+    background-size: 1280px auto; //1280 came from the width of the image when viewed on the browser
   }
 }
 
