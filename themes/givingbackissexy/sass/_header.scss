@@ -200,7 +200,7 @@
   .menu-primary-container {
     width: 629px;
     height: auto;
-    margin: 25px auto 0;
+    margin: 10px auto 0;
     display: flex;
     justify-content: center;
   }
@@ -212,12 +212,31 @@
     text-align: center;
     position: relative;
     display: inline-block;
-
+    &:hover .sub-menu {
+      display: block !important;
+    }
   }
 
   //Parent links
   .menu a {
+    padding: auto;
     float: none;
+  }
+
+  //Overrides a float. Vertically aligns links with the bordered 'Contact Us' link.
+  .main-navigation li {
+    float: none;
+  }
+
+  //About Link
+  #menu-item-47 a {
+    cursor: pointer;
+  }
+
+  //Contact Us Link
+  #menu-item-42 {
+    padding: 8px;
+    border: 2px solid #fff;
   }
 
   .sub-menu {
@@ -227,6 +246,7 @@
     font-size: 0.8rem;
     border: 1px solid #000;
     background-color: #fff;
+    display: none !important;
   }
 
   // Sub-menu items (overrides)
