@@ -6,30 +6,29 @@
  */
 
  // Register Custom Taxonomy
- // Register Custom Taxonomy
 function gbis_register_events_tax() {
 
 	$labels = array(
-		'name'                       => 'Event History',
-		'singular_name'              => 'Event History',
-		'menu_name'                  => 'Event History',
-		'all_items'                  => 'All Event Categories',
-		'parent_item'                => 'Event Category',
-		'parent_item_colon'          => 'Event Category:',
-		'new_item_name'              => 'New Event Category',
-		'add_new_item'               => 'Add New Event Category',
-		'edit_item'                  => 'Edit Event Category',
-		'update_item'                => 'Update Event Category',
-		'view_item'                  => 'View Event Category',
-		'separate_items_with_commas' => 'Separate event categories with commas',
-		'add_or_remove_items'        => 'Add or remove event categories',
+		'name'                       => 'Event Status',
+		'singular_name'              => 'Event Status',
+		'menu_name'                  => 'Event Status',
+		'all_items'                  => 'All Event Statuses',
+		'parent_item'                => 'Event Status',
+		'parent_item_colon'          => 'Event Status:',
+		'new_item_name'              => 'New Event Status',
+		'add_new_item'               => 'Add New Event Status',
+		'edit_item'                  => 'Edit Event Status',
+		'update_item'                => 'Update Event Status',
+		'view_item'                  => 'View Event Status',
+		'separate_items_with_commas' => 'Separate event statuses with commas',
+		'add_or_remove_items'        => 'Add or remove event statuses',
 		'choose_from_most_used'      => 'Choose from the most used',
-		'popular_items'              => 'Popular Event Categories',
-		'search_items'               => 'Search Event Categories',
+		'popular_items'              => 'Popularity Cloud',
+		'search_items'               => 'Search Event Status Used',
 		'not_found'                  => 'Not Found',
-		'no_terms'                   => 'No event categories',
-		'items_list'                 => 'Event Categories list',
-		'items_list_navigation'      => 'Event Categories list navigation',
+		'no_terms'                   => 'No event statuses',
+		'items_list'                 => 'Event Statuses list',
+		'items_list_navigation'      => 'Event Statuses list navigation',
 	);
 	$args = array(
 		'labels'                     => $labels,
