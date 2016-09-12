@@ -31,7 +31,7 @@
 				</div>
 		 </div>
 
-			<p class="copyright">Copyright &copy;2016 Cory Manson<p>
+			<p class="copyright">Copyright &copy; <?php the_date('Y'); ?> Cory Manson<p>
 
     </div>
 
