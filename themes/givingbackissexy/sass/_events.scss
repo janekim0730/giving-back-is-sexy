@@ -7,10 +7,6 @@
 .single-events{
   font-family: 'SourceSansPro-Regular';
 
-  .event-area{
-    padding-right: 1rem;
-    padding-left: 1rem;
-
     .event-header{
       display: flex;
       flex-direction: column;
@@ -35,20 +31,21 @@
     }
 
     .event-content{
+      padding: 0 1rem;
       p{
         line-height: 2;
       }
     }
     .button-container{
+      margin: 0 1rem;
       display: flex;
       justify-content: center;
       .color-button{
         @include color-button;
       }
   }
-}
-
   .event-info{
+    font-size: 16px;
     line-height: 1.5;
     padding: 1rem;
     margin: 1.5rem 0 2rem 0;
@@ -66,9 +63,16 @@
       flex-direction: column;
       margin-left: 1rem;
       margin-right: 1rem;
-      .event-week, .event-month, .event-day, .event-year{
+      .event-week{
         text-align: center;
-        padding: .3rem 2.5rem;
+        padding: .1rem 1.5rem;
+        letter-spacing: 2px;
+      }
+      .event-month, .event-day, .event-year{
+        text-align: center;
+        padding: 0.1rem 1.5rem;
+        font-size: 20px;
+        letter-spacing: 2px;
       }
       .style-line{
         border-bottom: 2px solid $color_button;
