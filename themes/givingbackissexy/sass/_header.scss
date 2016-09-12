@@ -129,7 +129,7 @@
 }
 
 //Indent the links of the toggled menu further to the right
-.menu-primary-container {
+.menu-desktop-container {
   width: 100vw;
   margin: 25px 0 0 25px;
   display: inline-block;
@@ -197,10 +197,10 @@
     height: 100px;
   }
 
-  .menu-primary-container {
+  .menu-desktop-container {
     width: 629px;
     height: auto;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     display: flex;
     justify-content: center;
   }

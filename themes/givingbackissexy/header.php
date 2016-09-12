@@ -36,7 +36,13 @@
 					</div>
 					<!-- <img class="hamburger" src="<?php echo get_template_directory_uri() ?>/assets/images/icons/hamburger.png" alt="Mobile Menu"> -->
 				</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php
+				if ( wp_is_mobile() ) {
+				     wp_nav_menu( array( 'menu' => 'primary' ) );
+				} else {
+				     wp_nav_menu( array( 'menu' => 'desktop' ) );
+				}
+				// <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
