@@ -55,7 +55,7 @@ get_header(); ?>
 							) );
 						?>
 
-						<a class="learn-more" href="#">Learn More</a>
+						<a class="learn-more" href="<?php echo wp_make_link_relative('http://localhost:8888/givingbackissexy/givingbackissexy/');?>">Learn More</a>
 
 						<!-- Grabs the form from the contact page -->
 						<?php $id = 17; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
