@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Dare to Dream Soiree
+ * Template Name: Single Event Dare to Dream Soiree Page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
