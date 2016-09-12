@@ -51,10 +51,39 @@
   }
   &:hover {
     border: 1px solid $color_button;
-    color: #000;
-    background-color: #fff;
+    color: $color_button;
+    background-color: transparent;
   }
   @media screen and (min-width: 768px){
     width: 30%;
+  }
+}
+
+@mixin black-border-button {
+  display: inline-block;
+  width: 95%;
+  height: auto;
+  padding: 20px 5px;
+  color: #000;
+  font-size: .8rem;
+  font-family: $font_accent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: 2px solid #000;
+  &:visited,
+  &:focus {
+    color: #000;
+  }
+  &:hover {
+    border: none;
+    color: #fff;
+    background-color: $color_button;
+  }
+  @media screen and (min-width: 768px){
+    font-size: 1.1rem;
+    width: 50%;
   }
 }

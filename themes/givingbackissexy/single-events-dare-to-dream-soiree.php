@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="event-header">
-					<h1>Genicca Global Group Represents the</h1>
+					<h1 class="event-header-txt">Genicca Global Group Represents the</h1>
 					<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
@@ -37,8 +37,8 @@ get_header(); ?>
 					<span class="event-month"><?php echo $date['event_month']; ?></span>
 					<span class="event-day"><?php echo $date['event_day']; ?></span>
 					<span class="event-year"><?php echo $date['event_year']; ?></span></div>
-
 		<?php endforeach; ?>
+
 		<?php
 					$locations = CFS() -> get ('event_location');
 					foreach ($locations as $location) :
@@ -50,19 +50,20 @@ get_header(); ?>
 	 </div>
 
  <div class="event-description"><?php echo CFS()->get( 'event_description' ); ?></div>
- <a class="button" href="#">Learn about Free to be</a>
+ <div class="button-container"><a class="talks-button" href="<?php echo get_the_permalink('/free-to-be-talks'); ?>">Learn about Free to be</a></div>
 
+ <h1 class="tickets">Tickets</h1>
  <div class="event-ticket-wrapper">
- <h1>Tickets</h1>
  <?php
  			$tickets = CFS() -> get ('event_tickets');
  			foreach ($tickets as $ticket) :
  			?>
- 			<div class="event-ticket">
- 			<span><?php echo $ticket['ticket_price']; ?></span>
- 			<span><?php echo $ticket['ticket_type']; ?></span>
- 			<a href="<?php echo $ticket['ticket_link']; ?>"></a>
- <?php endforeach; ?></div>
+ 			<div class="event-tickets">
+ 			<div class="price-and-type"><span class="ticket-price"><?php echo $ticket['ticket_price']; ?></span>
+ 			<span class="ticket-type"><?php echo $ticket['ticket_type']; ?></span></div>
+ 			<span class="ticket-link"><?php echo $ticket['ticket_link'];?></span></div>
+<?php endforeach; ?>
+ <div class="button-container"><a class="ticket-button" href="https://www.picatic.com/daretodreamsoiree">Buy Tickets</a></div>
  <p>Tickets are available through Picatic</p>
 </div>
 
@@ -73,16 +74,17 @@ get_header(); ?>
 			 foreach ($schedules as $schedule) :
 			 ?>
 			 <div class="schedule">
-			 <span><?php echo $schedule['event_time']; ?></span>
+			 <span class="event-time"><?php echo $schedule['event_time']; ?></span>
 			 <span><?php echo $schedule['event_schedule']; ?></span>
- <?php endforeach; ?></div>
- <a href="#">Buy Tickets</a>
- </div>
+			 </div>
+ <?php endforeach; ?>
+ <div class="buttons-container"><a class="block-button" href="https://www.picatic.com/daretodreamsoiree">Buy Tickets</a></div>
+</div>
 
-
+<div class="featured-sponsor-wrapper">
  <h1>Featured Sponsors</h1>
 		 <h2 class="platinum-sponsor">Platinum</h2>
-			<?php echo do_shortcode("[wp_flickity id='1']"); ?>
+		<?php echo do_shortcode("[wp_flickity id='1']"); ?>
 
 		<h2 class="gold-sponsor">Gold</h2>
 		<?php echo do_shortcode("[wp_flickity id='2']"); ?>
@@ -98,16 +100,19 @@ get_header(); ?>
 
 <h1>Vendors</h1>
  	<?php echo do_shortcode("[wp_flickity id='8']"); ?>
+</div>
 
-
+<div class="sponsor-registration">
 <h1>Become a sponsor or vendor</h1>
 <p>We are currently accepting applications for sponsors and vendors the the Dare to Dream Soiree. Details are available in our Sponsorship Package.</p>
 <a href="#">Download Sponsorship Package</a>
 <a href="#">Apply to be a sponsor/vendor</a>
 
+<div class="follow-event">
 <h1>Follow the event</h1>
 <a href="http://www.twitter.com/givingbackisexy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.facebook.com/events/1575340396104023" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+</div>
 
 </article>
 
