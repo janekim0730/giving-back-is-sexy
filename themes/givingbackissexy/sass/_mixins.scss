@@ -30,3 +30,28 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+@mixin color-button {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: $font_accent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  background-color: $color_button;
+  &:visited,
+  &:focus {
+    color: #fff;
+  }
+  &:hover {
+    border: 1px solid $color_button;
+    color: #000;
+    background-color: #fff;
+  }
+}

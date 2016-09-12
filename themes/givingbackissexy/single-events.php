@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single event posts.
+ * Template Name: Dare to Dream Soiree
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -9,44 +9,44 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-<?php while ( have_posts() ) : the_post(); ?>
+	<div id="primary" class="event-area">
+		<main id="main" class="event-main" role="main">
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="event-header">
+					<h1>Genicca Global Group Represents the</h1>
 					<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
 				</header><!---header-->
 
 				<div class="event-content">
-							<?php the_content(); ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+								<?php the_content(); ?>
+							<?php endwhile; // End of the loop. ?>
 				</div><!---content-->
-				<a class="button" href="https://www.picatic.com/daretodreamsoiree" target="_blank">Buy Tickets</a>
+				<a class="color-button" href="https://www.picatic.com/daretodreamsoiree" target="_blank">Buy Tickets</a>
 
+		<?php
+					$dates = CFS() -> get ('event_date');
+					foreach ($dates as $date) :
+					?>
+					<div class="event-info">
+					<div class="event-date"><span><?php echo $date['event_day_of_the_week']; ?></span>
+					<span><?php echo $date['event_month']; ?></span>
+					<span><?php echo $date['event_day']; ?></span>
+					<span><?php echo $date['event_year']; ?></span></div>
 
-<?php
-			$dates = CFS() -> get ('event_date');
-			foreach ($dates as $date) :
-			?>
-			<div class="event-date"><span><?php echo $date['event_day_of_the_week']; ?></span>
-			<span><?php echo $date['event_month']; ?></span>
-			<span><?php echo $date['event_day']; ?></span>
-			<span><?php echo $date['event_year']; ?></span></div>
-
-<?php endforeach; ?></div>
-
-<?php
-			$locations = CFS() -> get ('event_location');
-			foreach ($locations as $location) :
-			?>
-			<div class="event-location">
-			<span><?php echo $location['event_place']; ?></span>
-			<span><?php echo $location['event_city']; ?></span></div>
-
-<?php endforeach; ?></div>
+		<?php endforeach; ?>
+		<?php
+					$locations = CFS() -> get ('event_location');
+					foreach ($locations as $location) :
+					?>
+					<div class="event-location">
+					<span><?php echo $location['event_place']; ?></span>
+					<span><?php echo $location['event_city']; ?></span></div>
+		<?php endforeach; ?>
+	 </div>
 
  <div class="event-description"><?php echo CFS()->get( 'event_description' ); ?></div>
  <a class="button" href="#">Learn about Free to be</a>
@@ -68,7 +68,7 @@ get_header(); ?>
 <div class="event-schedule-wrapper">
  <h1>Schedule</h1>
  <?php
-			 $schedules = CFS() -> get ('event_tickets');
+			 $schedules = CFS() -> get ('schedule');
 			 foreach ($schedules as $schedule) :
 			 ?>
 			 <div class="schedule">
@@ -108,9 +108,8 @@ get_header(); ?>
 <a href="http://www.twitter.com/givingbackisexy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.facebook.com/events/1575340396104023" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 
-
 </article>
-<?php endwhile; // End of the loop. ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

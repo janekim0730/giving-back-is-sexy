@@ -1,3 +1,72 @@
 /*----------------------------
   GBIS: Events
 -----------------------------*/
+
+/*---------- Dare To Dream Soiree ----------*/
+
+.single-events{
+
+  .event-area{
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    .event-header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem 1rem 1rem 1rem;
+      h1{
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        @media screen and (min-width: 768px){
+          font-size: 24px;
+        }
+      }
+      img{
+        align-self: center;
+        padding: 1rem 1rem 1rem 2rem;
+        @media screen and (min-width: 768px){
+          padding: 2rem 2rem 2rem 4rem;
+        }
+      }
+    }
+
+    .event-content{
+      p{
+        line-height: 2;
+      }
+    }
+    .color-button{
+      @include color-button;
+  }
+}
+
+  .event-info{
+    text-align: center;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: $accent_color;
+    display: flex;
+    .event-date{
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      padding: 1rem;
+    }
+    .event-location{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+  }
+
+
+
+
+
+
+
+
+}
