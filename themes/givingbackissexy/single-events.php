@@ -25,17 +25,18 @@ get_header(); ?>
 								<?php the_content(); ?>
 							<?php endwhile; // End of the loop. ?>
 				</div><!---content-->
-				<a class="color-button" href="https://www.picatic.com/daretodreamsoiree" target="_blank">Buy Tickets</a>
+				<div class="button-container"><a class="color-button" href="https://www.picatic.com/daretodreamsoiree" target="_blank">Buy Tickets</a></div>
 
 		<?php
 					$dates = CFS() -> get ('event_date');
 					foreach ($dates as $date) :
 					?>
 					<div class="event-info">
-					<div class="event-date"><span><?php echo $date['event_day_of_the_week']; ?></span>
-					<span><?php echo $date['event_month']; ?></span>
-					<span><?php echo $date['event_day']; ?></span>
-					<span><?php echo $date['event_year']; ?></span></div>
+					<div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
+					<span class="style-line"></span>
+					<span class="event-month"><?php echo $date['event_month']; ?></span>
+					<span class="event-day"><?php echo $date['event_day']; ?></span>
+					<span class="event-year"><?php echo $date['event_year']; ?></span></div>
 
 		<?php endforeach; ?>
 		<?php
@@ -43,8 +44,8 @@ get_header(); ?>
 					foreach ($locations as $location) :
 					?>
 					<div class="event-location">
-					<span><?php echo $location['event_place']; ?></span>
-					<span><?php echo $location['event_city']; ?></span></div>
+					<span class="event-place"><?php echo $location['event_place']; ?></span>
+					<span class="event-city"><?php echo $location['event_city']; ?></span></div>
 		<?php endforeach; ?>
 	 </div>
 

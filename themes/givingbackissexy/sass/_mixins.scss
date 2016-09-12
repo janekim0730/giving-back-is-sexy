@@ -33,7 +33,7 @@
 
 @mixin color-button {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   height: auto;
   margin: 20px 0;
   padding: 20px 0;
@@ -53,5 +53,8 @@
     border: 1px solid $color_button;
     color: #000;
     background-color: #fff;
+  }
+  @media screen and (min-width: 768px){
+    width: 30%;
   }
 }
