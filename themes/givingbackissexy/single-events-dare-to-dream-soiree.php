@@ -81,32 +81,32 @@ get_header(); ?>
  <div class="buttons-container"><a class="block-button" href="https://www.picatic.com/daretodreamsoiree">Buy Tickets</a></div>
 </div>
 
-<div class="featured-sponsor-wrapper">
- <h1>Featured Sponsors</h1>
-		 <h2 class="platinum-sponsor">Platinum</h2>
-		<?php echo do_shortcode("[wp_flickity id='1']"); ?>
+	<div class="featured-sponsor-wrapper">
+		<h1>Featured Sponsors</h1>
+		<h2 class="platinum-sponsor">Platinum</h2>
+		<?php echo do_shortcode("[huge_it_gallery id='2']"); ?>
 
 		<h2 class="gold-sponsor">Gold</h2>
-		<?php echo do_shortcode("[wp_flickity id='2']"); ?>
+		<?php echo do_shortcode("[huge_it_gallery id='3']"); ?>
 
 		<h2 class="silver-sponsor">Silver</h2>
-		<?php echo do_shortcode("[wp_flickity id='5']"); ?>
+		<?php echo do_shortcode("[huge_it_gallery id='4']"); ?>
 
 		<h2 class="bronze-sponsor">Bronze</h2>
-		<?php echo do_shortcode("[wp_flickity id='6']"); ?>
+		<?php echo do_shortcode("[huge_it_gallery id='5']"); ?>
 
- <h1>Contributing Sponsors</h1>
-  	<?php echo do_shortcode("[wp_flickity id='7']"); ?>
+		<h1>Contributing Sponsors</h1>
+		<?php echo do_shortcode("[huge_it_gallery id='6']"); ?>
 
-<h1>Vendors</h1>
- 	<?php echo do_shortcode("[wp_flickity id='8']"); ?>
-</div>
+		<h1>Vendors</h1>
+		<?php echo do_shortcode("[huge_it_gallery id='7']"); ?>
+	</div>
 
 <div class="sponsor-registration">
 <h1>Become a sponsor or vendor</h1>
 <p>We are currently accepting applications for sponsors and vendors the the Dare to Dream Soiree. Details are available in our Sponsorship Package.</p>
-<a href="#">Download Sponsorship Package</a>
-<a href="#">Apply to be a sponsor/vendor</a>
+<div class="download-files"><a href="http://gbis-dev.claudinebananal.com/wp-content/uploads/2016/09/Sponsorship-Package-August30.pdf">Download Sponsorship Package</a>
+<a href="https://genicca.typeform.com/to/Ocv1mf">Apply to be a sponsor/vendor</a></div>
 
 <div class="follow-event">
 <h1>Follow the event</h1>
