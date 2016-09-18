@@ -20,11 +20,7 @@ get_header(); ?>
 					<?php endif; ?>
 				</header><!---header-->
 
-				<div class="event-content">
-							<?php while ( have_posts() ) : the_post(); ?>
-								<?php the_content(); ?>
-							<?php endwhile; // End of the loop. ?>
-				</div><!---content-->
+        <div class="event-main-content"><?php echo CFS()->get( 'event_main_content' ); ?></div>
 				<div class="button-container"><a class="color-button" href="https://www.picatic.com/daretodreamsoiree" target="_blank">Buy Tickets</a></div>
 
 		<?php
@@ -82,24 +78,9 @@ get_header(); ?>
 </div>
 
 	<div class="featured-sponsor-wrapper">
-		<h1>Featured Sponsors</h1>
-		<h2 class="platinum-sponsor">Platinum</h2>
-		<?php echo do_shortcode("[huge_it_gallery id='2']"); ?>
-
-		<h2 class="gold-sponsor">Gold</h2>
-		<?php echo do_shortcode("[huge_it_gallery id='3']"); ?>
-
-		<h2 class="silver-sponsor">Silver</h2>
-		<?php echo do_shortcode("[huge_it_gallery id='4']"); ?>
-
-		<h2 class="bronze-sponsor">Bronze</h2>
-		<?php echo do_shortcode("[huge_it_gallery id='5']"); ?>
-
-		<h1>Contributing Sponsors</h1>
-		<?php echo do_shortcode("[huge_it_gallery id='6']"); ?>
-
-		<h1>Vendors</h1>
-		<?php echo do_shortcode("[huge_it_gallery id='7']"); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; // End of the loop. ?>
 	</div>
 
 <div class="sponsor-registration">
