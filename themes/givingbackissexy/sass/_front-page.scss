@@ -89,21 +89,6 @@
 }
 
 .learn-more {
-  @include button;
-  width: 250px;
-  background-color: #000;
-  border: 1px solid #000;
-  &:visited,
-  &:focus {
-    color: #fff;
-  }
-  &:hover {
-    color: #000;
-    background-color: #fff;
-  }
-  @include desktop {
-    position: absolute;
-    top: 350px;
-    left: 300px;
-  }
+  @include color-border-button;
+  color: #000;
 }

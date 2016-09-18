@@ -6,6 +6,11 @@
 
 .single-events{
   font-family: 'SourceSansPro-Regular';
+  h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0;
+  }
 
     .event-header{
       display: flex;
@@ -31,6 +36,8 @@
     }
 
     .event-main-content{
+      width: 80%;
+      margin: 0 auto;
       padding: 0 1rem;
       line-height: 2;
       @media screen and (min-width: 768px){
@@ -39,7 +46,7 @@
     }
 
     .button-container{
-      margin: 0 1rem;
+      margin: 0 1rem 1rem 1rem;
       display: flex;
       justify-content: center;
       .color-button{
@@ -97,21 +104,17 @@
   }
 
   .event-description{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
     padding: 0 1rem 2rem 1rem;
     line-height: 2;
-    @media screen and (min-width: 768px){
-     text-align: center;
-    }
   }
 
   .talks-button{
     @include black-border-button;
   }
 
-  h1{
-    padding-top: 1rem;
-    text-align: center;
-  }
   .event-ticket-wrapper{
     margin-top: 2rem;
 
@@ -180,9 +183,7 @@
   @media screen and (min-width: 768px){
     font-size: 24px;
   }
-  h1{
-    text-align: center;
-  }
+
   .schedule{
     border-bottom: 1px solid #fff;
     padding: 1rem;
@@ -203,22 +204,81 @@
 
 .featured-sponsor-wrapper{
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
 
+  p > a> img {
+    margin-bottom: 1rem;
+    @media screen and (min-width: 768px){
+      margin-right: 1.2rem;
+      margin-left: 1.2rem;
+    }
+  }
 }
 
 .sponsor-registration{
   padding-right: 1rem;
   padding-left: 1rem;
+
   p{
-    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    @media screen and (min-width: 768px){
+    
+    }
   }
+
   .download-files{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .sponsorship-link{
+      @include color-border-button;
+      font-size: 10px;
+      @media screen and (min-width: 768px){
+        font-size: 12px;
+      }
+    }
+
+    .apply-sponsor{
+      @include black-border-button;
+      font-size: 10px;
+      @media screen and (min-width: 768px){
+        font-size: 12px;
+      }
+    }
   }
 }
 
+.follow-event{
+  margin-top: 2rem;
+
+  .follow-icons{
+
+    display: flex;
+    justify-content: center;
+
+    a{
+      color: #000;
+      font-size: 60px;
+      margin: .5rem;
+      text-decoration: none;
+      margin: 1rem;
+
+      &:visited{
+        color: #000;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $accent_color;
+      }
+    }
+  }
+}
 
 
 }
