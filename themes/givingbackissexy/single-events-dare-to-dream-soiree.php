@@ -59,8 +59,8 @@ get_header(); ?>
  			foreach ($tickets as $ticket) :
  			?>
  			<div class="event-tickets">
- 			<div class="price-and-type"><span class="ticket-price"><?php echo $ticket['ticket_price']; ?></span>
- 			<span class="ticket-type"><?php echo $ticket['ticket_type']; ?></span></div>
+ 		  <span class="ticket-price"><?php echo $ticket['ticket_price']; ?></span>
+ 			<span class="ticket-type"><?php echo $ticket['ticket_type']; ?></span>
  			<span class="ticket-link"><?php echo $ticket['ticket_link'];?></span></div>
 <?php endforeach; ?>
  <div class="button-container"><a class="ticket-button" href="https://www.picatic.com/daretodreamsoiree">Buy Tickets</a></div>
