@@ -170,6 +170,15 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding: .5rem 1rem;
+  border: 1px solid transparent;
+  &:visited,
+  &:focus {
+   border: 1px solid #fff;
+  }
+  &:hover {
+    border: 1px solid #fff;
+  }
 }
 
 //Cover the whole page in pink gradient
