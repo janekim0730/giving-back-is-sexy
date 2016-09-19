@@ -170,14 +170,16 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: .5rem 1rem;
-  border: 1px solid transparent;
-  &:visited,
-  &:focus {
-   border: 1px solid #fff;
-  }
-  &:hover {
-    border: 1px solid #fff;
+  @media screen and (min-width: 768px){
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    &:visited,
+    &:focus {
+     border: 1px solid #fff;
+    }
+    &:hover {
+      border: 1px solid #fff;
+    }
   }
 }
 
