@@ -12,36 +12,31 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+			<div class="page-header">
+			<h1 class="page-header-title"><?php single_term_title(); ?></h1>
+			<p><?php echo term_description(); ?></p>
+		</div>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+		<article class="event-grid" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+				<div class="event-grid-item">
+					<div class="thumbnail-wrapper">
+						<a href='<?php echo esc_url( get_permalink() ); ?>'>
+							<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</a>
+					</div>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+					<div class="event-info">
+						<span class="event-title"><?php echo get_the_title(); ?></span>
+						<span class="event-date"><?php echo CFS()->get( 'event_month' ); ?></span>
+					</div>
+				</div>
 
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+				<?php endwhile; // End of the loop. ?>
+			</article>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

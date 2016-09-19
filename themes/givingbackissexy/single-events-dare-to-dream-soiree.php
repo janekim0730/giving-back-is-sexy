@@ -96,8 +96,14 @@ get_header(); ?>
 </div></div>
 
 <div class="contact-form">
-<h1>Contact Us</h1>
-<?php $id = 17; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?></div>
+	<h1>Contact Us</h1>
+	 <?php
+	   $id=17;
+	   $post = get_page($id);
+	   $content = apply_filters('the_content', $post->post_content);
+	   echo $content; ?>
+</div>
+
 </article>
 
 
