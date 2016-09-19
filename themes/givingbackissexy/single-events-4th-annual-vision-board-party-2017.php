@@ -14,10 +14,28 @@ get_header(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<header class="vision-header">
-					<?php echo 'hi' ?>
+				<header class="annual-vision-board">
+					<h1 class="vision-header"><?php echo get_the_title(); ?></h1>
+					<div class="vision-video">
+						<?php while ( have_posts() ) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; // End of the loop. ?>
+				 </div>
 				</header><!---header-->
 
+			<div class="event-main-content"><?php echo CFS()->get( 'event_main_content' ); ?></div>
+
+      <div class="event-icons">
+			<?php
+							$icons = CFS() -> get ('event_icons');
+							foreach ($icons as $icon) :
+							?>
+							<div class="icon-wrapper"><img class="vision-icons" src="<?php echo $icon['icon']; ?>"/>
+						  <span class="vision-icon-contents"><?php echo $icon['event_icon_contents']; ?></span></div>
+				<?php endforeach; ?>
+			</div>
+
+			<div class="extra-content"><?php echo CFS()->get( 'extra' ); ?></div>
 
 </article>
 

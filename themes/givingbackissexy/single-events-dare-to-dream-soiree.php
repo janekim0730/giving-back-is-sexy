@@ -97,6 +97,14 @@ get_header(); ?>
 
 <div class="contact-form">
 	<h1>Contact Us</h1>
+	<div class="contact-container">
+		<img class="contact-icon" src="<?php echo CFS()->get( 'mail_icon' ); ?>" alt="mail icon"/>
+		<?php echo CFS()->get( 'e_mail' ); ?>
+	</div>
+	<div class="contact-container">
+		<img class="contact-icon" src="<?php echo CFS()->get( 'phone_icon' ); ?>" alt="phone icon"/>
+		<a href=""><?php echo CFS()->get( 'phone_number' ); ?></a>
+	</div>
 	 <?php
 	   $id=17;
 	   $post = get_page($id);

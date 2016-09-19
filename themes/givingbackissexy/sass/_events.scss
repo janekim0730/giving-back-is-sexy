@@ -295,6 +295,53 @@
 
 /*---------- 4th Annual Vision Board Party 2017 ----------*/
 
-.vision-header{
-  padding-top: 4rem;
+.annual-vision-board{
+    padding-top: 2rem;
+
+  .vision-header{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .vision-video{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.event-icons{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  @media screen and (min-width: 768px){
+   display: flex;
+   flex-wrap: wrap;
+  }
+
+  .icon-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px){
+     width: 40%;
+     margin: 0 auto;
+    }
+      .vision-icons{
+        width: 200px;
+        height: 200px;
+        margin-bottom: .5rem;
+      }
+      .vision-icon-contents{
+        margin-bottom: 2rem;
+    }
+  }
+}
+
+.extra-content{
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
