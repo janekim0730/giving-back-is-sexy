@@ -10,6 +10,11 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 0;
+    font-size: 26px;
+    @media screen and (min-width: 768px){
+      margin-top: 3rem;
+      font-size: 34px;
+    }
   }
 
     .event-header{
@@ -178,7 +183,7 @@
   background-color: $accent_color;
   color: #fff;
   font-size: 16px;
-  padding: 1rem;
+  padding: .5rem;
   margin-top: 2rem;
   @media screen and (min-width: 768px){
     font-size: 24px;
@@ -213,6 +218,13 @@
     @media screen and (min-width: 768px){
       margin-right: 1.2rem;
       margin-left: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  h2{
+    font-size: 24px;
+    @media screen and (min-width: 768px){
+      font-size: 28px;
     }
   }
 }
@@ -221,12 +233,12 @@
   padding-right: 1rem;
   padding-left: 1rem;
 
-  p{
+  .registration-content{
     width: 80%;
     margin: 0 auto;
     padding-bottom: 1rem;
     @media screen and (min-width: 768px){
-    
+     text-align: center;
     }
   }
 

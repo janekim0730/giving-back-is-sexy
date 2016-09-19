@@ -41,6 +41,7 @@
   background: url('../../assets/images/hero-background.png') no-repeat;
   background-size: cover;
   position: relative;
+
   img { //the 'sexy' image
     width: 150px;
     height: auto;
@@ -58,7 +59,7 @@
     padding: 70px 200px;
     font-size: 2rem;
     background-position: center;
-    background-size: 1280px auto; //1280 came from the width of the image when viewed on the browser
+    background-size: 100% auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,6 +90,22 @@
 }
 
 .learn-more {
-  @include color-border-button;
+  @include button;
+  width: 250px;
+  background-color: transparent;
+  border: 2px solid $color_button;
   color: #000;
+  &:visited,
+  &:focus {
+    color: #fff;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $color_button;
+  }
+  @include desktop {
+    position: absolute;
+    top: 350px;
+    left: 300px;
+  }
 }
