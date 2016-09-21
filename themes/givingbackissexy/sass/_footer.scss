@@ -65,6 +65,7 @@
         text-decoration: none;
         letter-spacing: 2px;
         text-transform: uppercase;
+        border: 1px solid transparent;
 
         &:visited{
           color: #fff;
@@ -72,6 +73,7 @@
         &:hover,
         &:focus,
         &:active {
+          border: 1px solid transparent;
           color: $accent_color;
          }
         }

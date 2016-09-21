@@ -183,10 +183,11 @@
   background-color: $accent_color;
   color: #fff;
   font-size: 16px;
-  padding: .5rem;
+  padding: .5rem 3rem;
   margin-top: 2rem;
   @media screen and (min-width: 768px){
     font-size: 24px;
+    padding: .5rem 6rem;
   }
 
   .schedule{
@@ -194,6 +195,9 @@
     padding: 1rem;
     .event-time{
       margin-right: 1rem;
+      @media screen and (min-width: 768px){
+        margin-right: 5rem;
+      }
     }
   }
 }
@@ -291,6 +295,23 @@
     }
   }
  }
+ .contact-container{
+   margin: 0 auto 10px;
+   @media screen and (min-width: 768px){
+     width: 80%;
+   }
+   .contact-icon {
+     width: 20px;
+     height: auto;
+     margin-right: 20px;
+   }
+   .cfs-hyperlink {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+   }
+ }
+
 }
 
 /*---------- 4th Annual Vision Board Party 2017 ----------*/

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Taxonomy Past Events
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -42,5 +42,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
