@@ -295,15 +295,15 @@
     }
   }
  }
- .contact-container{
-   margin: 0 auto 10px;
+ .contacts-container{
+   margin: 0 auto;
    @media screen and (min-width: 768px){
      width: 80%;
    }
-   .contact-icon {
+   .contacts-icon {
      width: 20px;
      height: auto;
-     margin-right: 20px;
+     margin-right: .5rem;
    }
    .cfs-hyperlink {
      color: #000;
