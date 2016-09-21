@@ -172,14 +172,6 @@
   letter-spacing: 2px;
   @media screen and (min-width: 768px){
     padding: .5rem 1rem;
-    border: 1px solid transparent;
-    &:visited,
-    &:focus {
-     border: 1px solid #fff;
-    }
-    &:hover {
-      border: 1px solid #fff;
-    }
   }
 }
 
@@ -232,6 +224,9 @@
   .menu a {
     padding: auto;
     float: none;
+    &:last-child { //the contact us link
+      border: 1px solid #fff;
+    }
   }
 
   //Overrides a float. Vertically aligns links with the bordered 'Contact Us' link.
@@ -242,12 +237,6 @@
   //About Link
   #menu-item-47 a {
     cursor: pointer;
-  }
-
-  //Contact Us Link
-  #menu-item-42 {
-    padding: 8px;
-    border: 2px solid #fff;
   }
 
   .sub-menu {
