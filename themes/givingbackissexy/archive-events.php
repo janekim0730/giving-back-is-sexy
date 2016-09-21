@@ -16,26 +16,14 @@ get_header(); ?>
 		  <h1>Events</h1>
 			</header>
 
-			<h2>Upcoming Events</h2>
-
 		<?php	$terms = get_terms('event_history');
-			echo '<ul>';
+			echo '<div>';
 			foreach ($terms as $term) {
-			echo '<li><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
+			echo '<h2><a href="'.get_term_link($term).'">'.$term->name.'</a></h2>';
 			}
-			echo '</ul>'; ?>
+			echo '</div>'; ?>
 
-			<h2>Past Events</h2>
 
-			<?php
-			$taxonomy = 'event_history';
-			$terms = get_terms($taxonomy); ?>
-      <a href="<?php echo wp_get_post_terms($term-> upcoming-events, $taxonomy); ?>"><h2><?php echo $term->name; ?></h2></a>
-
-			<?php
-			$taxonomy = 'event_history';
-			$terms = get_terms($taxonomy); ?>
-			<a href="<?php echo wp_get_post_terms($term-> past-events, $taxonomy); ?>"><h2><?php echo $term->name; ?></h2></a>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
