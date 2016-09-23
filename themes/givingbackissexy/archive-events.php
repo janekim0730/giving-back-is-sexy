@@ -16,14 +16,6 @@ get_header(); ?>
 		  <h1>Events</h1>
 			</header>
 
-		 <?php $terms = get_terms('event_history');
-			 echo '<div>';
-			 foreach ($terms as $term) {
-			echo '<h2><a href="'.get_term_link($term).'">'.$term->name.'</a></h2>';
-			}
-			echo '</div>'; ?>
-
-
 			<div class="event-container">
 							<?php
 							$args = array( 'post_type' => 'events',

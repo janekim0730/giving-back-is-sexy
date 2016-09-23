@@ -26,6 +26,9 @@ body {
 //Pushes the content at the bottom of the sticky header across all pages
 .site-content{
   padding-top: 84px;
+  @media screen and (min-width: 768px){
+    padding-top: 74px;
+  }
 }
 
 .entry-header {
