@@ -23,7 +23,7 @@
 .contact-container {
   margin: 0 auto 10px;
   @media screen and (min-width: 768px){
-    width: 80%;
+    width: 280px;
   }
 }
 
@@ -39,10 +39,8 @@
   width: 100%;
 
   @media screen and (min-width: 768px){
-    width: 80%;
-    margin: 0 auto;
+    margin: 50px auto 0;
   }
-
 
   label {
     font-size: 0.9rem;

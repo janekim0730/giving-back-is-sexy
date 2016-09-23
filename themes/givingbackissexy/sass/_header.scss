@@ -170,9 +170,6 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  @media screen and (min-width: 768px){
-    padding: .5rem 1rem;
-  }
 }
 
 //Cover the whole page in pink gradient
@@ -203,7 +200,7 @@
   .menu-desktop-container {
     width: 629px;
     height: auto;
-    margin: 20px auto 0;
+    margin: 9px auto 0;
     display: flex;
     justify-content: center;
   }
@@ -221,10 +218,11 @@
   }
 
   //Parent links
-  .menu a {
+  header .menu a {
     padding: auto;
     float: none;
     &:last-child { //the contact us link
+      padding: .5rem 1rem;
       border: 1px solid #fff;
     }
   }
