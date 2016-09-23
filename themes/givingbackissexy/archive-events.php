@@ -12,36 +12,58 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			if ( have_posts() ) : ?>
+			<header class="page-header">
+		  <h1>Events</h1>
+			</header>
 
-				<header class="page-header">
-					<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="archive-description">', '</div>' );
-					?>
-				</header><!-- .page-header -->
+		 <?php $terms = get_terms('event_history');
+			 echo '<div>';
+			 foreach ($terms as $term) {
+			echo '<h2><a href="'.get_term_link($term).'">'.$term->name.'</a></h2>';
+			}
+			echo '</div>'; ?>
 
-				<?php
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
+			<div class="event-container">
+							<?php
+							$args = array( 'post_type' => 'events',
+															'posts_per_page' => 4,
+															'order' => 'ASC');
+							$events_post = get_posts( $args );
+							?>
+							<ul class="event-wrapper">
+								<?php foreach ( $events_post as $post ) : setup_postdata( $post ); ?>
+								<li class="event-list">
+									<div class="single-container">
+										<a class="event-link" href="<?php echo esc_url( get_permalink() ); ?>">
+											<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+												<?php the_title( sprintf( '<h2 class="event-title">', '</h2>' ) ); ?></div></a>
+												<?php
+															$dates = CFS() -> get ('event_date');
+															foreach ($dates as $date) :
+															?>
+															<div class="event-info">
+															<div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
+															<span class="style-line"></span>
+															<span class="event-month"><?php echo $date['event_month']; ?></span>
+															<span class="event-day"><?php echo $date['event_day']; ?></span>
+															<span class="event-year"><?php echo $date['event_year']; ?></span></div>
+												<?php endforeach; ?>
+												<?php
+															$locations = CFS() -> get ('event_location');
+															foreach ($locations as $location) :
+															?>
+															<div class="event-location">
+															<span class="event-place"><?php echo $location['event_place']; ?></span>
+															<span class="event-city"><?php echo $location['event_city']; ?></span></div>
+												<?php endforeach; ?>
+									</div>
+							  </li>
+								<?php endforeach; wp_reset_postdata(); ?>
+							</ul>
+					</div>
 
-				endwhile;
 
-				the_posts_navigation();
-
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -95,7 +95,7 @@ get_header(); ?>
 <a href="https://www.facebook.com/events/1575340396104023" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 </div></div>
 
-<div class="contact-form">
+<div class="contacts-form">
 	<h1>Contact Us</h1>
 	<div class="contacts-container">
 		<img class="contacts-icon" src="<?php echo CFS()->get( 'mail_icon' ); ?>" alt="mail icon"/>

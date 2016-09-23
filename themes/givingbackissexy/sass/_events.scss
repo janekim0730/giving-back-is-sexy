@@ -84,6 +84,7 @@
         text-align: center;
         padding: .1rem 1.5rem;
         letter-spacing: 2px;
+        font-size: 18px;
       }
       .event-month, .event-day, .event-year{
         text-align: center;
@@ -295,7 +296,7 @@
     }
   }
  }
- .contacts-container{
+ .contacts-form{
    margin: 0 auto;
    @media screen and (min-width: 768px){
      width: 80%;
@@ -366,3 +367,31 @@
   font-size: 20px;
   text-align: center;
 }
+
+// .external-button{
+//
+//   margin: 20px;
+//
+//   .cfs-hyperlink{
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     letter-spacing: 3px;
+//     font-size: 1rem;
+//     color: #fff;
+//     font-family: $font_accent;
+//     padding: 20px 40px;
+//     margin: 10px;
+//     background-color: $color_button;
+//     border: 1px solid $color_button;
+//
+//     &:visited,
+//     &:focus {
+//       color: #fff;
+//     }
+//     &:hover {
+//     }
+//     @media screen and (min-width: 768px){
+//
+//     }
+//   }
+// }
