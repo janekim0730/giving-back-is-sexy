@@ -5,7 +5,7 @@
 .site-footer{
   background-color: #000;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -40,11 +40,9 @@
   }
 }
 
-.menu-wrapper{
-  display: flex;
-  justify-content: space-between;
-
   .footer-menus{
+    display: inline-block;
+    width: 49%;
 
     .menu-footer-container{
       width: 100%;
@@ -86,12 +84,12 @@
   }
 
   .go-top{
-    padding: 0px 10px;
-    display: flex;
+    width: 49%;
+    display: inline-block;
 
     .top-wrapper{
       display: flex;
-      align-items: center;
+      justify-content: flex-end;
 
       .top-button{
         height: 45px;
@@ -99,7 +97,6 @@
     }
   }
  }
-}
 
 .copyright{
   font-family: "SourceSansPro-Regular", sans-serif;
@@ -117,6 +114,7 @@
 
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 
 
     .social-networks{
@@ -134,10 +132,6 @@
         padding: .7rem;
       }
     }
-
-.menu-wrapper{
-  display: flex;
-  flex-direction: column;
 
   .footer-menus{
     width: 100%;
@@ -162,6 +156,7 @@
   }
 
   .go-top{
+    width: 100%;
    display: flex;
    order: 1;
    justify-content: center;
@@ -174,7 +169,6 @@
    }
   }
  }
-} //menu-wrapper
 
   .copyright{
     font-size: 18px;

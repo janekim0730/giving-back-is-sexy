@@ -21,7 +21,6 @@
 				<span class="instagram-icon"><a href="https://www.instagram.com/geniccadotcom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
 			</div>
 
-     <div class="menu-wrapper">
 				<div class="footer-menus">
 				 <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
 				</div>
@@ -30,7 +29,6 @@
 					<a class="top-wrapper" href="#top" id="smoothup" title="Back to top"><img class="top-button" src="<?php echo get_template_directory_uri()?>/assets/images/icons/go-top-button.png" alt="go-to-top button"></a>
 				</div>
 		   </div>
-	   </div>
 
 			<p class="copyright">Copyright &copy; <?php the_date('Y'); ?> Cory Manson<p>
 
