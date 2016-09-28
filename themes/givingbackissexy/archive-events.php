@@ -20,7 +20,8 @@ get_header(); ?>
 							<?php
 							$args = array( 'post_type' => 'events',
 															'posts_per_page' => 4,
-															'order' => 'ASC');
+															'order' => 'ASC'
+																				);
 							$events_post = get_posts( $args );
 							?>
 							<ul class="event-wrapper">

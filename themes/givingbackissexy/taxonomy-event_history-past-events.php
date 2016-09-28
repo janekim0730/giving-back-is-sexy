@@ -45,7 +45,7 @@ get_header(); ?>
 											<span class="event-city"><?php echo $location['event_city']; ?></span></div>
 								<?php endforeach; ?>
 							</div>
-							  <div class="button-container"><a class="tax-button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Details</a></div>
+							  <div class="button-container"><a class="tax-button" href="#" title="<?php the_title_attribute(); ?>">Details</a></div>
 						</div>
 					</div>
 						<?php endwhile; // End of the loop. ?>
