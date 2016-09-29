@@ -19,6 +19,7 @@
 				<span class="twitter-icon"><a href="https://twitter.com/geniccadotcom" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
 				<span class="facebook-icon"><a href="https://www.facebook.com/geniccadotcom" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
 				<span class="instagram-icon"><a href="https://www.instagram.com/geniccadotcom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+				<span class="website-link"><a href="http://badassladyboss.com/welcome" target="_blank"><i class="fa fa-globe" aria-hidden="true" title="badassladyboss"></i></a></span>
 			</div>
 
 				<div class="footer-menus">
