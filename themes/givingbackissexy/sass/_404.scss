@@ -1,3 +1,27 @@
 /*----------------------------
   GBIS: 404 Error Page
 -----------------------------*/
+
+.error-404{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .page-title{
+    font-size: 144px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .error-title{
+    font-size: 48px;
+  }
+
+  .error-content{
+    font-size: 24px;
+  }
+
+  .return-home{
+    @include color-button;
+  }
+}
