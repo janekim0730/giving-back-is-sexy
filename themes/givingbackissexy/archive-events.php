@@ -91,7 +91,7 @@ get_header(); ?>
 		 										</div>
 		 										<!--end event-right-content-->
 		 										<div class="external-link"><?php echo CFS()->get( 'ticket_external_link' ); ?></div>
-		 											<!--end button-container-->
+		 										
 		 									</div>
 		 									<!--end event-info-right-->
 		 								</div>
