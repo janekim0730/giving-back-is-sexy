@@ -47,7 +47,7 @@ get_header(); ?>
 							</div>
 							  <div class="external-link"><?php echo CFS()->get( 'ticket_external_link' ); ?></div>
 						</div>
-					</div>
+					</div><!--event-info-wrapper -->
 						<?php endwhile; // End of the loop. ?>
 					</div>
 
