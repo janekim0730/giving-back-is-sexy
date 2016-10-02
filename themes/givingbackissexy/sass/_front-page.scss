@@ -16,7 +16,7 @@
     text-align: center;
     line-height: 2;
     @include desktop {
-      p:first-child { //the introductory text only
+      .intro p:first-child { //the introductory text only
         width: 58%;
         margin: 0 auto;
       }
