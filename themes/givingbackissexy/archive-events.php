@@ -90,9 +90,7 @@ get_header(); ?>
 		 											<?php endforeach; ?>
 		 										</div>
 		 										<!--end event-right-content-->
-		 										  <div class="button-container">
-		 												<a class="tax-button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">RSVP</a>
-		 											</div>
+		 										<div class="external-link"><?php echo CFS()->get( 'ticket_external_link' ); ?></div>
 		 											<!--end button-container-->
 		 									</div>
 		 									<!--end event-info-right-->
