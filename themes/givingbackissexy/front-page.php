@@ -69,28 +69,6 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<?php
-		    $term = get_queried_object();
-		    $args =array(
-		                 'post_type' => 'events',
-		                 'posts_per_page' =>4,
-		                 'tax_query' =>
-		                         array(
-		                               array(
-		                                     'taxonomy' => 'upcoming-events',
-		                  
-		                                     'terms'    => $term->name,
-		                                     ),
-		                               ),
-		                  );
-		  $loop = new WP_Query( $args );
-		  if($loop->have_posts()):while ( $loop->have_posts() ): $loop->the_post();
-		the_title();
-		the_content();
-		endwhile;
-		endif;
-		?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
