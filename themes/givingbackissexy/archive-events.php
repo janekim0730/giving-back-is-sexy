@@ -10,15 +10,16 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="event-info-container site-main" role="main">
 
 
 
 
 			<header class="page-header">
+				<h1 class="event-tax-title">Events</h1>
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -38,7 +39,7 @@ get_header(); ?>
 
 			    foreach( $terms as $term ) : ?>
 
-			    <h2>  <?php echo $term->name; ?></h2>
+			    <h2 class="event-tax-title"> <?php echo $term->name; ?></h2>
 
 			        <?php
 			        $args = array(
@@ -59,7 +60,7 @@ get_header(); ?>
 
 			        if( $posts->have_posts() ): while( $posts->have_posts() ) : $posts->the_post(); ?>
 
-			                   <h2><?php  echo get_the_title(); ?></h2>
+			                   <!-- <h2><?php  echo get_the_title(); ?></h2> -->
 
 												 <div class="event-info-wrapper">
 		 											<?php

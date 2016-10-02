@@ -407,124 +407,124 @@
   .event-tax-title{
     text-align: center;
   }
+} // event-info-container
 
-  .event-info-wrapper{
+.event-info-wrapper{
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+  }
+
+  p{
+    margin: 0;
+    text-align: center;
+    @media screen and (min-width: 768px){
+      text-align: left;
+    }
+  }
+
+  .event-info{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px){
+      font-size: 24px;
+      flex: 1;
+    }
+
+    .event-date{
+      border: 2px solid #000;
+      text-transform: uppercase;
+      font-family: $font-bold;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin-left: .5rem;
+      margin-right: .5rem;
+
+      .event-week{
+        text-align: center;
+        padding: .1rem 1.5rem;
+        letter-spacing: 2px;
+        font-size: 18px;
+      }
+      .event-month, .event-day, .event-year{
+        text-align: center;
+        padding: 0.1rem 1.5rem;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+      .style-line{
+        border-bottom: 2px solid $color_button;
+      }
+    } // event-date
+  } // event-info
+
+  .event-info-right{
 
     @media screen and (min-width: 768px){
       display: flex;
-      flex-direction: row;
+      flex: 2;
+      justify-content: space-between;
     }
+    .event-right-content{
 
-    p{
-      margin: 0;
-      text-align: center;
       @media screen and (min-width: 768px){
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
       }
     }
 
-    .event-info{
-      font-size: 16px;
-      line-height: 1.5;
-      padding: 1rem;
-      margin: 1rem 0 0 0;
+    .event-location{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      @media screen and (min-width: 768px){
+       text-align: left;
+      }
+    }
+
+    .button-container{
       display: flex;
       justify-content: center;
 
       @media screen and (min-width: 768px){
-        font-size: 24px;
-        flex: 1;
+       display: flex;
+       align-items: center;
       }
 
-      .event-date{
-        border: 2px solid #000;
+      .tax-button{
+        display: inline-block;
+        width: 100% auto;
+        min-width: 180px;
+        height: auto;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-family: $font_accent;
+        text-decoration: none;
         text-transform: uppercase;
-        font-family: $font-bold;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        margin-left: .5rem;
-        margin-right: .5rem;
-
-        .event-week{
-          text-align: center;
-          padding: .1rem 1.5rem;
-          letter-spacing: 2px;
-          font-size: 18px;
-        }
-        .event-month, .event-day, .event-year{
-          text-align: center;
-          padding: 0.1rem 1.5rem;
-          font-size: 20px;
-          letter-spacing: 2px;
-        }
-        .style-line{
-          border-bottom: 2px solid $color_button;
-        }
-      } // event-date
-    } // event-info
-
-    .event-info-right{
-
-      @media screen and (min-width: 768px){
-        display: flex;
-        flex: 2;
-        justify-content: space-between;
-      }
-      .event-right-content{
-
-        @media screen and (min-width: 768px){
-          display: flex;
-          flex-direction: column;
-          align-self: center;
-        }
-      }
-
-      .event-location{
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        @media screen and (min-width: 768px){
-         text-align: left;
-        }
-      }
-
-      .button-container{
-        display: flex;
-        justify-content: center;
-
-        @media screen and (min-width: 768px){
-         display: flex;
-         align-items: center;
-        }
-
-        .tax-button{
-          display: inline-block;
-          width: 100% auto;
-          min-width: 180px;
-          height: auto;
-          margin: 20px 20px;
-          padding: 20px 20px;
+        letter-spacing: 3px;
+        background-color: $color_button;
+        border: 1px solid transparent;
+        &:visited,
+        &:focus {
           color: #fff;
-          font-size: 1.1rem;
-          font-family: $font_accent;
-          text-decoration: none;
-          text-transform: uppercase;
-          text-align: center;
-          letter-spacing: 3px;
-          background-color: $color_button;
-          border: 1px solid transparent;
-          &:visited,
-          &:focus {
-            color: #fff;
-          }
-          &:hover {
-            border: 1px solid $color_button;
-            color: $color_button;
-            background-color: transparent;
-          }
+        }
+        &:hover {
+          border: 1px solid $color_button;
+          color: $color_button;
+          background-color: transparent;
         }
       }
     }
-  } // event-info-wrapper
-} // event-info-container
+  }
+} // event-info-wrapper
