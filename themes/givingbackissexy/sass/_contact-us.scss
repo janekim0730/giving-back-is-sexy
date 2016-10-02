@@ -75,9 +75,15 @@
     width: 100%;
   }
 
-.button-container{
-  display: flex;
-  justify-content: center;
-}
+  .button-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .ajax-loader {
+    width: 16px;
+    height: 16px;
+    margin: 40px;
+  }
 
 }
