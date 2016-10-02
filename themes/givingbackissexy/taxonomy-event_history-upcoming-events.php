@@ -26,11 +26,15 @@ get_header(); ?>
 														foreach ($dates as $date) :
 														?>
 														<div class="event-info">
-														<div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
-														<span class="style-line"></span>
-														<span class="event-month"><?php echo $date['event_month']; ?></span>
-														<span class="event-day"><?php echo $date['event_day']; ?></span>
-														<span class="event-year"><?php echo $date['event_year']; ?></span></div></div>
+															<div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
+															<span class="style-line"></span>
+															<span class="event-month"><?php echo $date['event_month']; ?></span>
+															<span class="event-day"><?php echo $date['event_day']; ?></span>
+															<span class="event-year"><?php echo $date['event_year']; ?></span>
+															</div>
+															<!--end event-date-->
+														</div>
+														<!--end event-info-->
 											<?php endforeach; ?>
 
 			            <div class="event-info-right">
@@ -41,15 +45,28 @@ get_header(); ?>
 														foreach ($locations as $location) :
 														?>
 														<div class="event-location">
-														<span class="event-place"><?php echo $location['event_place']; ?></span>
-														<span class="event-city"><?php echo $location['event_city']; ?></span></div>
+															<span class="event-place"><?php echo $location['event_place']; ?></span>
+															<span class="event-city"><?php echo $location['event_city']; ?></span>
+														</div>
+														<!--end event-location-->
 											<?php endforeach; ?>
 										</div>
+<<<<<<< HEAD
 										  <div class="external-link"><?php echo CFS()->get( 'ticket_external_link' ); ?></div>
+=======
+										<!--end event-right-content-->
+										  <div class="button-container">
+												<a class="tax-button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">RSVP</a>
+											</div>
+											<!--end button-container-->
+>>>>>>> 86f1a3f6e7cbf2afc90595350d3d79da3b6d6988
 									</div>
+									<!--end event-info-right-->
 								</div>
+								<!--end event-info-wrapper-->
 									<?php endwhile; // End of the loop. ?>
 								</div>
+								<!--end event-info-container-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
