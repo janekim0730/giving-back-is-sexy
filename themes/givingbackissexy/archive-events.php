@@ -12,9 +12,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="event-info-container site-main" role="main">
 
-
-
-
 			<header class="page-header">
 				<h1 class="event-tax-title">Events</h1>
 				<?php
@@ -45,7 +42,6 @@ get_header(); ?>
 			        $args = array(
 			                'post_type' => $post_type,
 			                'posts_per_page' => -1,  //show all posts
-											'orderby'      => 'count',
 			                'tax_query' => array(
 			                    array(
 			                        'taxonomy' => $taxonomy,
