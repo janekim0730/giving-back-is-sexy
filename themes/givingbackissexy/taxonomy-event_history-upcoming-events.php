@@ -51,15 +51,8 @@ get_header(); ?>
 														<!--end event-location-->
 											<?php endforeach; ?>
 										</div>
-<<<<<<< HEAD
 										  <div class="external-link"><?php echo CFS()->get( 'ticket_external_link' ); ?></div>
-=======
-										<!--end event-right-content-->
-										  <div class="button-container">
-												<a class="tax-button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">RSVP</a>
-											</div>
-											<!--end button-container-->
->>>>>>> 86f1a3f6e7cbf2afc90595350d3d79da3b6d6988
+
 									</div>
 									<!--end event-info-right-->
 								</div>
