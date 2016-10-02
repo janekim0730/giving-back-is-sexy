@@ -64,12 +64,12 @@ get_header(); ?>
 		 														foreach ($dates as $date) :
 		 														?>
 		 														<div class="event-info">
-		 															<div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
+		 															<a class="event-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><div class="event-date"><span class="event-week"><?php echo $date['event_day_of_the_week']; ?></span>
 		 															<span class="style-line"></span>
 		 															<span class="event-month"><?php echo $date['event_month']; ?></span>
 		 															<span class="event-day"><?php echo $date['event_day']; ?></span>
 		 															<span class="event-year"><?php echo $date['event_year']; ?></span>
-		 															</div>
+																</div></a>
 		 															<!--end event-date-->
 		 														</div>
 		 														<!--end event-info-->

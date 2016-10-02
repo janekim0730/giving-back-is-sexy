@@ -445,6 +445,11 @@
       flex: 1;
     }
 
+    .event-link{
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+
     .event-date{
       border: 2px solid #000;
       text-transform: uppercase;
@@ -470,8 +475,9 @@
       .style-line{
         border-bottom: 2px solid $color_button;
       }
-    } // event-date
-  } // event-info
+    } //event-date
+  } //event-link
+  } //event-info
 
   .event-info-right{
 
