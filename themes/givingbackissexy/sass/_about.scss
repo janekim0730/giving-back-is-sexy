@@ -15,15 +15,17 @@
   }
 }
 
-.hashtag-wrapper{
-  display:flex;
-  justify-content: center;
-  margin: 1rem;
-}
+// .hashtag-wrapper{
+//   display:flex;
+//   justify-content: center;
+//   margin: 1rem;
+// }
 
 .gbis-hashtag{
-  width: 290px;
-  height: 32px;
+  width: 320px;
+  height: auto;
+  margin: 20px auto 10px;
+  display: block;
 }
 
 .about-gbis-container {
@@ -96,13 +98,13 @@
 
   img{
     width: 580px;
-    height: 142px;
+    height: auto;
   }
 
   .profile-photo {
     align-self: center;
     width: 180px;
-    height: 190px;
+    height: auto;
     margin: 30px 10px 10px 10px;
     border-radius: 50%;
   }
@@ -194,7 +196,7 @@
 
   .gbis-hashtag{
     width: 700px;
-    height: 68px;
+    height: auto;
    }
   }
 
@@ -214,12 +216,12 @@
 
     img{
       width: 628px;
-      height: 191px;
+      height: auto;
     }
 
   .profile-photo{
     width: 288px;
-    height: 288px;
+    height: auto;
   }
  }
 }
