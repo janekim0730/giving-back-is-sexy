@@ -13,19 +13,14 @@
   }
 
   .entry-content {
-    text-align: center;
     line-height: 2;
     @include desktop {
       .intro p:first-child { //the introductory text only
         width: 58%;
         margin: 0 auto;
+        text-align: center;
       }
     }
-  }
-
-  //Places labels of forms to the left
-  #wpcf7-f71-p24-o1 {
-    text-align: left;
   }
 }
 
@@ -92,6 +87,7 @@
 .learn-more {
   @include button;
   width: 250px;
+  text-align: center;
   background-color: transparent;
   border: 2px solid $color_button;
   color: #000;
