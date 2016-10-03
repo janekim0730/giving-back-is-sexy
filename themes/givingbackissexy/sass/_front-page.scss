@@ -98,7 +98,8 @@
 
 .learn-more {
   @include button;
-  width: 250px;
+  width: 100%;
+  margin: auto;
   text-align: center;
   background-color: transparent;
   border: 2px solid $color_button;
@@ -112,6 +113,7 @@
     background-color: $color_button;
   }
   @include desktop {
+    width: 250px;
     position: absolute;
     top: 350px;
     left: 300px;
