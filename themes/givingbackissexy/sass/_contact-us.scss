@@ -86,6 +86,7 @@
   }
 
   .ajax-loader {
+    display: none; //if it displays, the design of the button changes...
     width: 16px;
     height: 16px;
     margin: 40px;
