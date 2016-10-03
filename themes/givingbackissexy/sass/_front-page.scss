@@ -22,6 +22,18 @@
       }
     }
   }
+
+  .contact-heading {
+    font-family: $font_accent;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .contact-container a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .hero {

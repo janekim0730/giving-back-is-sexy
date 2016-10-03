@@ -150,6 +150,16 @@ get_header(); ?>
 						</div>
 
 						<!-- //End Upcoming Events Loop -->
+						<h2 class="contact-heading">Contact Us</h2>
+						<div class="entry-content container">
+							<div class="contact-container">
+							  <img class="contact-icon" src="<?php echo get_template_directory_uri()?>/assets/images/icons/mail.png" alt="mail icon"/>
+								<a href="mailto:geniccaglobalgroup@gmail.com">geniccaglobalgroup@gmail.com</a>
+							</div>
+							<div class="contact-container">
+								<img class="contact-icon" src="<?php echo get_template_directory_uri()?>/assets/images/icons/phone.png" alt="phone icon"/>
+								<a href="tel:6048625588">604.862.5588</a>
+							</div>
 						<!-- Grabs the form from the contact page -->
 						<?php $id = 17; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
 
