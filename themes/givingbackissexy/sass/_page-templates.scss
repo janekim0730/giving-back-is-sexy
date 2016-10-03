@@ -18,9 +18,13 @@ body {
   font-family: $font_default;
 }
 
-.container {
+.container{
   width: 90%;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px){
+    width: 100%;
+  }
 }
 
 //Pushes the content at the bottom of the sticky header across all pages
