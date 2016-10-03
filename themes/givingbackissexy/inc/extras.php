@@ -73,6 +73,10 @@ function gbis_custom_login() {
 						background-color: #fff;
 						border: 1px solid #000;
 					}
+
+					.login #login_error, .login .message {
+						border-left: 4px solid #ebcb80;
+					}
 				</style>';
 }
 add_action ('login_head', 'gbis_custom_login');
