@@ -255,7 +255,6 @@
     .sponsorship-link{
       @include color-border-button;
       font-size: 10px;
-
       @media screen and (min-width: 768px){
         font-size: 12px;
       }
@@ -296,22 +295,6 @@
       }
     }
   }
- }
- .contacts-form{
-   margin: 0 auto;
-   @media screen and (min-width: 768px){
-     width: 80%;
-   }
-   .contacts-icon {
-     width: 20px;
-     height: auto;
-     margin-right: .5rem;
-   }
-   .cfs-hyperlink {
-     color: #000;
-     text-decoration: none;
-     cursor: pointer;
-   }
  }
 
 }

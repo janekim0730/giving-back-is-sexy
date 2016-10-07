@@ -95,16 +95,15 @@ get_header(); ?>
 <a href="https://www.facebook.com/events/1575340396104023" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 </div></div>
 
-<div class="contacts-form">
-	<h1>Contact Us</h1>
-	<div class="contacts-container">
-		<img class="contacts-icon" src="<?php echo CFS()->get( 'mail_icon' ); ?>" alt="mail icon"/>
-		<?php echo CFS()->get( 'e_mail' ); ?>
-	</div>
-	<div class="contacts-container">
-		<img class="contacts-icon" src="<?php echo CFS()->get( 'phone_icon' ); ?>" alt="phone icon"/>
-		<a href=""><?php echo CFS()->get( 'phone_number' ); ?></a>
-	</div>
+	<div class="entry-content container">
+		<div class="contact-container">
+			<img class="contact-icon" src="<?php echo CFS()->get( 'mail_icon' ); ?>" alt="mail icon"/>
+			<?php echo CFS()->get( 'e_mail' ); ?>
+		</div>
+		<div class="contact-container">
+			<img class="contact-icon" src="<?php echo CFS()->get( 'phone_icon' ); ?>" alt="phone icon"/>
+			<a href=""><?php echo CFS()->get( 'phone_number' ); ?></a>
+		</div>
 	 <?php
 	   $id=17;
 	   $post = get_page($id);
