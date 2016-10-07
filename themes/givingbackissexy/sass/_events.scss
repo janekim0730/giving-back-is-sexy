@@ -297,6 +297,22 @@
   }
  }
 
+ .entry-content{
+   .contact-container{
+     .cfs-hyperlink{
+       color: #000;
+       text-decoration: none;
+       cursor: pointer;
+       &:hover,
+       &:focus,
+       &:active{
+         color: #000;
+       }
+     }
+
+   }
+ }
+
 }
 
 /*---------- 4th Annual Vision Board Party 2017 ----------*/

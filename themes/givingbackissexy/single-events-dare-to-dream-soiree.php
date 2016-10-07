@@ -102,7 +102,7 @@ get_header(); ?>
 		</div>
 		<div class="contact-container">
 			<img class="contact-icon" src="<?php echo CFS()->get( 'phone_icon' ); ?>" alt="phone icon"/>
-			<a href=""><?php echo CFS()->get( 'phone_number' ); ?></a>
+			<a class="contact-link" href="tel:16048625588" target="_blank"><?php echo CFS()->get( 'phone_number' ); ?></a>
 		</div>
 	 <?php
 	   $id=17;
