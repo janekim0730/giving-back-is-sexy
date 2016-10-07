@@ -46,7 +46,7 @@ get_header(); ?>
 	 </div>
 
  <div class="event-description"><?php echo CFS()->get( 'event_description' ); ?></div>
- <div class="button-container"><a class="talks-button" href="<?php echo get_the_permalink('/free-to-be-talks'); ?>">Learn about Free to be</a></div>
+ <div class="button-container"><a class="talks-button" href="<?php echo get_site_url(); ?>/free-to-be-talks">Learn about Free to be</a></div>
 
  <h1 class="tickets">Tickets</h1>
  <div class="event-ticket-wrapper">
@@ -86,7 +86,7 @@ get_header(); ?>
 <div class="sponsor-registration">
 <h1>Become a sponsor or vendor</h1>
 <p class="registration-content">We are currently accepting applications for sponsors and vendors the the Dare to Dream Soiree. Details are available in our Sponsorship Package.</p>
-<div class="download-files"><a class="sponsorship-link" href="http://gbis-dev.claudinebananal.com/wp-content/uploads/2016/09/Sponsorship-Package-August30.pdf">Download Sponsorship Package</a>
+<div class="download-files"><a class="sponsorship-link" href="http://givingbackissexy.ca/wp-content/uploads/2016/09/Sponsorship-Package-August30.pdf">Download Sponsorship Package</a>
 <a class="apply-sponsor" href="https://genicca.typeform.com/to/Ocv1mf">Apply to be a sponsor/vendor</a></div>
 
 <div class="follow-event">
